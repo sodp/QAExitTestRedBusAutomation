@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="38871" started-at="2021-07-01T15:17:08Z" finished-at="2021-07-01T15:17:47Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="38871" started-at="2021-07-01T15:17:08Z" finished-at="2021-07-01T15:17:47Z">
+      <class name="tests.busOperatorTest">
+        <test-method status="PASS" signature="setExtent()[pri:0, instance:tests.busOperatorTest@58ea606c]" name="setExtent" is-config="true" duration-ms="211" started-at="2021-07-01T15:17:08Z" finished-at="2021-07-01T15:17:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setExtent -->
+        <test-method status="PASS" signature="intializeWebdriver()[pri:0, instance:tests.busOperatorTest@58ea606c]" name="intializeWebdriver" is-config="true" duration-ms="2846" started-at="2021-07-01T15:17:08Z" finished-at="2021-07-01T15:17:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intializeWebdriver -->
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:tests.busOperatorTest@58ea606c]" name="openBrowser" is-config="true" duration-ms="26428" started-at="2021-07-01T15:17:11Z" finished-at="2021-07-01T15:17:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="all_bus_operators()[pri:0, instance:tests.busOperatorTest@58ea606c]" name="all_bus_operators" duration-ms="8534" started-at="2021-07-01T15:17:38Z" finished-at="2021-07-01T15:17:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- all_bus_operators -->
+        <test-method status="PASS" signature="attachScreenShot(org.testng.ITestResult)[pri:0, instance:tests.busOperatorTest@58ea606c]" name="attachScreenShot" is-config="true" duration-ms="8" started-at="2021-07-01T15:17:46Z" finished-at="2021-07-01T15:17:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=all_bus_operators status=SUCCESS method=busOperatorTest.all_bus_operators()[pri:0, instance:tests.busOperatorTest@58ea606c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- attachScreenShot -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.busOperatorTest@58ea606c]" name="closeBrowser" is-config="true" duration-ms="1023" started-at="2021-07-01T15:17:46Z" finished-at="2021-07-01T15:17:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.busOperatorTest@58ea606c]" name="endReport" is-config="true" duration-ms="487" started-at="2021-07-01T15:17:47Z" finished-at="2021-07-01T15:17:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- tests.busOperatorTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

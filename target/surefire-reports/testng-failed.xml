@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" verbose="0" name="Failed suite [Surefire suite]">
+  <test thread-count="1" verbose="0" name="Surefire test(failed)">
+    <classes>
+      <class name="tests.modifySearchBusTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="endReport"/>
+          <include name="careers"/>
+          <include name="attachScreenShot"/>
+          <include name="openBrowser"/>
+          <include name="intializeWebdriver"/>
+          <include name="setExtent"/>
+        </methods>
+      </class> <!-- tests.modifySearchBusTest -->
+      <class name="tests.sectionInfoTest">
+        <methods>
+          <include name="insuranceSection"/>
+          <include name="endReport"/>
+          <include name="openBrowser"/>
+          <include name="faqsection"/>
+          <include name="userAgreementSection"/>
+          <include name="setExtent"/>
+          <include name="agentRegistration"/>
+          <include name="privacyPolicysection"/>
+          <include name="closeBrowser"/>
+          <include name="blogSection"/>
+          <include name="attachScreenShot"/>
+          <include name="termAndCondition"/>
+          <include name="intializeWebdriver"/>
+        </methods>
+      </class> <!-- tests.sectionInfoTest -->
+      <class name="tests.signinTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="signin"/>
+          <include name="endReport"/>
+          <include name="attachScreenShot"/>
+          <include name="openBrowser"/>
+          <include name="intializeWebdriver"/>
+          <include name="setExtent"/>
+        </methods>
+      </class> <!-- tests.signinTest -->
+      <class name="tests.aboutusTest">
+        <methods>
+          <include name="validAboutUs"/>
+          <include name="closeBrowser"/>
+          <include name="endReport"/>
+          <include name="attachScreenShot"/>
+          <include name="openBrowser"/>
+          <include name="intializeWebdriver"/>
+          <include name="setExtent"/>
+        </methods>
+      </class> <!-- tests.aboutusTest -->
+      <class name="tests.busOperatorTest">
+        <methods>
+          <include name="all_bus_operators"/>
+          <include name="closeBrowser"/>
+          <include name="endReport"/>
+          <include name="attachScreenShot"/>
+          <include name="openBrowser"/>
+          <include name="intializeWebdriver"/>
+          <include name="setExtent"/>
+        </methods>
+      </class> <!-- tests.busOperatorTest -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->
