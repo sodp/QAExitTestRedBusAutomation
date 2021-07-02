@@ -39,18 +39,18 @@ public class modifySearchBusPage {
 	public WebElement modifysearchbusbutton;
 
 	public void selectsource(String sourcellocation) {
-		source.clear();
+		//source.clear();
 		source.sendKeys(sourcellocation);
 	}
 
 	public void selectdestination(String destloaction)   {
-		destination.clear();
+		//destination.clear();
 		destination.sendKeys(destloaction);
 	}
 
 	public void dateSelectButton() throws Throwable   {
 
-		calender.selectDate(selectdate, "2021", "Jun", "28", driver);
+		calender.selectDate(selectdate, "2021", "July", "10", driver);
 	
 	}
 

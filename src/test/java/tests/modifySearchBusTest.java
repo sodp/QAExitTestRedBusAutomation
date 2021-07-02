@@ -10,13 +10,13 @@ import util.commonUtil;
 
 
 public class modifySearchBusTest extends BaseTest {
-	private String sheetName = "RedbusFunctionality";
+	private String sheetName = "SearchBusTest";
 
 	@Test
 	public void careers() throws Throwable {
-		//extentTest = extent.startTest("Valid ModifySearchBusLocation functionality scenario test");
+		extentTest = extent.startTest("Valid ModifySearchBusLocation functionality scenario test");
 
-		String testcase = "ContactRedBus";
+		String testcase = "ValidsearchBus";
 
 		modifySearchBusPage modify_location = new modifySearchBusPage(driver);
 
@@ -31,11 +31,17 @@ public class modifySearchBusTest extends BaseTest {
 		commonUtil.toCheckExecutionRequired(executionRequired);
 
 		modify_location.selectsource(source_Location);
+		Thread.sleep(5000);
 		modify_location.selectdestination(dest_Location);
+		Thread.sleep(5000);
 		modify_location.dateSelectButton();
+		Thread.sleep(5000);
 		modify_location.clicksearchbutton();
+		Thread.sleep(5000);
 		modify_location.modifylocation(dest_Location, source_Location);
+		Thread.sleep(5000);
 		modify_location.modifySearch();
+		Thread.sleep(5000);
 
 		String expected = driver.getTitle();
 		logger.info("ModifySearchBusLocation functionality Test Case Passed");
