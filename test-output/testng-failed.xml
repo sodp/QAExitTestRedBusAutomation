@@ -3,17 +3,17 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.signinTest">
+      <class name="tests.bookingShowTicketTest">
         <methods>
           <include name="closeBrowser"/>
-          <include name="signin"/>
+          <include name="ShowTicket"/>
           <include name="endReport"/>
           <include name="attachScreenShot"/>
           <include name="openBrowser"/>
           <include name="intializeWebdriver"/>
           <include name="setExtent"/>
         </methods>
-      </class> <!-- tests.signinTest -->
+      </class> <!-- tests.bookingShowTicketTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

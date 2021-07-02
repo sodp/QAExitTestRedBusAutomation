@@ -2,46 +2,42 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="37993" started-at="2021-07-02T05:38:46Z" finished-at="2021-07-02T05:39:24Z">
+  <suite name="Default suite" duration-ms="9767" started-at="2021-07-02T18:08:12Z" finished-at="2021-07-02T18:08:22Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="37993" started-at="2021-07-02T05:38:46Z" finished-at="2021-07-02T05:39:24Z">
-      <class name="tests.signinTest">
-        <test-method status="PASS" signature="setExtent()[pri:0, instance:tests.signinTest@6f45df59]" name="setExtent" is-config="true" duration-ms="73" started-at="2021-07-02T05:38:46Z" finished-at="2021-07-02T05:38:46Z">
+    <test name="Default test" duration-ms="9767" started-at="2021-07-02T18:08:12Z" finished-at="2021-07-02T18:08:22Z">
+      <class name="tests.bookingShowTicketTest">
+        <test-method status="PASS" signature="setExtent()[pri:0, instance:tests.bookingShowTicketTest@6f45df59]" name="setExtent" is-config="true" duration-ms="310" started-at="2021-07-02T18:08:12Z" finished-at="2021-07-02T18:08:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setExtent -->
-        <test-method status="PASS" signature="intializeWebdriver()[pri:0, instance:tests.signinTest@6f45df59]" name="intializeWebdriver" is-config="true" duration-ms="1606" started-at="2021-07-02T05:38:46Z" finished-at="2021-07-02T05:38:47Z">
+        <test-method status="PASS" signature="intializeWebdriver()[pri:0, instance:tests.bookingShowTicketTest@6f45df59]" name="intializeWebdriver" is-config="true" duration-ms="3609" started-at="2021-07-02T18:08:12Z" finished-at="2021-07-02T18:08:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- intializeWebdriver -->
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:tests.signinTest@6f45df59]" name="openBrowser" is-config="true" duration-ms="15014" started-at="2021-07-02T05:38:47Z" finished-at="2021-07-02T05:39:02Z">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:tests.bookingShowTicketTest@6f45df59]" name="openBrowser" is-config="true" duration-ms="3474" started-at="2021-07-02T18:08:16Z" finished-at="2021-07-02T18:08:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="FAIL" signature="signin()[pri:0, instance:tests.signinTest@6f45df59]" name="signin" duration-ms="20317" started-at="2021-07-02T05:39:02Z" finished-at="2021-07-02T05:39:23Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method status="FAIL" signature="ShowTicket()[pri:0, instance:tests.bookingShowTicketTest@6f45df59]" name="ShowTicket" duration-ms="1424" started-at="2021-07-02T18:08:19Z" finished-at="2021-07-02T18:08:20Z">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//body/div[6]/div[1]/div[2]/div[1]/div[1]/div[3]/iframe[1]"}
-  (Session info: chrome=91.0.4472.124)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[element click intercepted: Element is not clickable at point (1044, 29)
+  (Session info: headless chrome=91.0.4472.124)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'SIDDHANTPANDA', ip: '192.168.0.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+System info: host: 'SIDDHANTPANDA', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\SIDDHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57884}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: beb509361feca470201214260378670b
-*** Element info: {Using=xpath, value=//body/div[6]/div[1]/div[2]/div[1]/div[1]/div[3]/iframe[1]}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\SIDDHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56339}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d561728ba5440a2ae3364af73fe4d215]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//body/div[6]/div[1]/div[2]/div[1]/div[1]/div[3]/iframe[1]"}
-  (Session info: chrome=91.0.4472.124)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (1044, 29)
+  (Session info: headless chrome=91.0.4472.124)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'SIDDHANTPANDA', ip: '192.168.0.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+System info: host: 'SIDDHANTPANDA', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\SIDDHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57884}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: beb509361feca470201214260378670b
-*** Element info: {Using=xpath, value=//body/div[6]/div[1]/div[2]/div[1]/div[1]/div[3]/iframe[1]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\SIDDHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56339}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d561728ba5440a2ae3364af73fe4d215
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -52,15 +48,16 @@ at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 at com.sun.proxy.$Proxy11.click(Unknown Source)
-at pages.signinPage.closePopUp(signinPage.java:47)
-at tests.signinTest.signin(signinTest.java:19)
+at pages.bookingManagingPage.showTicket(bookingManagingPage.java:45)
+at tests.bookingShowTicketTest.ShowTicket(bookingShowTicketTest.java:27)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -88,30 +85,30 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- signin -->
-        <test-method status="PASS" signature="attachScreenShot(org.testng.ITestResult)[pri:0, instance:tests.signinTest@6f45df59]" name="attachScreenShot" is-config="true" duration-ms="253" started-at="2021-07-02T05:39:23Z" finished-at="2021-07-02T05:39:23Z">
+        </test-method> <!-- ShowTicket -->
+        <test-method status="PASS" signature="attachScreenShot(org.testng.ITestResult)[pri:0, instance:tests.bookingShowTicketTest@6f45df59]" name="attachScreenShot" is-config="true" duration-ms="504" started-at="2021-07-02T18:08:20Z" finished-at="2021-07-02T18:08:21Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=signin status=FAILURE method=signinTest.signin()[pri:0, instance:tests.signinTest@6f45df59] output={null}]]]>
+                <![CDATA[[TestResult name=ShowTicket status=FAILURE method=bookingShowTicketTest.ShowTicket()[pri:0, instance:tests.bookingShowTicketTest@6f45df59] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- attachScreenShot -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.signinTest@6f45df59]" name="closeBrowser" is-config="true" duration-ms="791" started-at="2021-07-02T05:39:23Z" finished-at="2021-07-02T05:39:24Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.bookingShowTicketTest@6f45df59]" name="closeBrowser" is-config="true" duration-ms="704" started-at="2021-07-02T18:08:21Z" finished-at="2021-07-02T18:08:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.signinTest@6f45df59]" name="endReport" is-config="true" duration-ms="337" started-at="2021-07-02T05:39:24Z" finished-at="2021-07-02T05:39:24Z">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.bookingShowTicketTest@6f45df59]" name="endReport" is-config="true" duration-ms="567" started-at="2021-07-02T18:08:22Z" finished-at="2021-07-02T18:08:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
-      </class> <!-- tests.signinTest -->
+      </class> <!-- tests.bookingShowTicketTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

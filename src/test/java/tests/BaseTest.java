@@ -119,7 +119,9 @@ public class BaseTest {
 			if (headless.equalsIgnoreCase("yes")) {
 				System.setProperty(prop.getProperty("driverc"), prop.getProperty("pathc"));
 				ChromeOptions options = new ChromeOptions();
-				options.addArguments("headless");
+//				options.addArguments("--disable-notifications");
+//                options.addArguments("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36");
+//				options.addArguments("headless");
 				driver = new ChromeDriver(options);
 			} else if (headless.equalsIgnoreCase("no")) {
 				System.setProperty(prop.getProperty("driverc"), prop.getProperty("pathc"));

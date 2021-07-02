@@ -5,7 +5,6 @@ tests\contactTest.class
 tests\BaseTest.class
 tests\helpTest.class
 util\ScreenShots.class
-tests\cancelBookingTest.class
 tests\signinTest.class
 tests\SearchBustest.class
 tests\sectionInfoTest.class

@@ -1,411 +1,1957 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="20" total="34" passed="14">
+<testng-results skipped="0" failed="19" ignored="28" total="47" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="306095" started-at="2021-07-02T10:21:59Z" finished-at="2021-07-02T10:27:05Z">
+  <suite name="Surefire suite" duration-ms="262236" started-at="2021-07-02T17:57:35Z" finished-at="2021-07-02T18:01:57Z">
     <groups>
     </groups>
-    <test name="Surefire test" duration-ms="306095" started-at="2021-07-02T10:21:59Z" finished-at="2021-07-02T10:27:05Z">
-      <class name="tests.busOperatorTest">
-        <test-method status="PASS" signature="intializeWebdriver()[pri:0, instance:tests.busOperatorTest@3eb25e1a]" name="intializeWebdriver" is-config="true" duration-ms="1838" started-at="2021-07-02T10:21:59Z" finished-at="2021-07-02T10:22:00Z">
+    <test name="Surefire test" duration-ms="262236" started-at="2021-07-02T17:57:35Z" finished-at="2021-07-02T18:01:57Z">
+      <class name="tests.bookingCancelTest">
+        <test-method status="PASS" signature="intializeWebdriver()[pri:0, instance:tests.bookingCancelTest@233795b6]" name="intializeWebdriver" is-config="true" duration-ms="3430" started-at="2021-07-02T17:57:35Z" finished-at="2021-07-02T17:57:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- intializeWebdriver -->
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:tests.busOperatorTest@3eb25e1a]" name="openBrowser" is-config="true" duration-ms="10573" started-at="2021-07-02T10:22:00Z" finished-at="2021-07-02T10:22:11Z">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:tests.bookingCancelTest@233795b6]" name="openBrowser" is-config="true" duration-ms="7943" started-at="2021-07-02T17:57:38Z" finished-at="2021-07-02T17:57:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="all_bus_operators()[pri:0, instance:tests.busOperatorTest@3eb25e1a]" name="all_bus_operators" duration-ms="13890" started-at="2021-07-02T10:22:11Z" finished-at="2021-07-02T10:22:25Z">
+        <test-method status="FAIL" signature="careers()[pri:0, instance:tests.bookingCancelTest@233795b6]" name="careers" duration-ms="10156" started-at="2021-07-02T17:57:46Z" finished-at="2021-07-02T17:57:56Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Manage Booking')]"}
+  (Session info: headless chrome=91.0.4472.124)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SIDDHANTPANDA', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\SIDDHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65051}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ca0e987dbf72ce03109815fb6cf8d310
+*** Element info: {Using=xpath, value=//div[contains(text(),'Manage Booking')]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Manage Booking')]"}
+  (Session info: headless chrome=91.0.4472.124)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SIDDHANTPANDA', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\SIDDHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65051}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ca0e987dbf72ce03109815fb6cf8d310
+*** Element info: {Using=xpath, value=//div[contains(text(),'Manage Booking')]}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy9.click(Unknown Source)
+at pages.cancelBookingPage.mangaeBooking(cancelBookingPage.java:26)
+at tests.bookingCancelTest.careers(bookingCancelTest.java:14)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- all_bus_operators -->
-        <test-method status="PASS" signature="attachScreenShot(org.testng.ITestResult)[pri:0, instance:tests.busOperatorTest@3eb25e1a]" name="attachScreenShot" is-config="true" duration-ms="2" started-at="2021-07-02T10:22:25Z" finished-at="2021-07-02T10:22:25Z">
+        </test-method> <!-- careers -->
+        <test-method status="PASS" signature="attachScreenShot(org.testng.ITestResult)[pri:0, instance:tests.bookingCancelTest@233795b6]" name="attachScreenShot" is-config="true" duration-ms="214" started-at="2021-07-02T17:57:56Z" finished-at="2021-07-02T17:57:56Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=all_bus_operators status=SUCCESS method=busOperatorTest.all_bus_operators()[pri:0, instance:tests.busOperatorTest@3eb25e1a] output={null}]]]>
+                <![CDATA[[TestResult name=careers status=FAILURE method=bookingCancelTest.careers()[pri:0, instance:tests.bookingCancelTest@233795b6] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- attachScreenShot -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.busOperatorTest@3eb25e1a]" name="closeBrowser" is-config="true" duration-ms="726" started-at="2021-07-02T10:22:25Z" finished-at="2021-07-02T10:22:26Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.bookingCancelTest@233795b6]" name="closeBrowser" is-config="true" duration-ms="581" started-at="2021-07-02T17:57:56Z" finished-at="2021-07-02T17:57:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- tests.bookingCancelTest -->
+      <class name="tests.modifySearchBusTest">
+        <test-method status="PASS" signature="intializeWebdriver()[pri:0, instance:tests.modifySearchBusTest@179ece50]" name="intializeWebdriver" is-config="true" duration-ms="4266" started-at="2021-07-02T17:59:15Z" finished-at="2021-07-02T17:59:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intializeWebdriver -->
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:tests.modifySearchBusTest@179ece50]" name="openBrowser" is-config="true" duration-ms="2513" started-at="2021-07-02T17:59:19Z" finished-at="2021-07-02T17:59:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="FAIL" signature="careers()[pri:0, instance:tests.modifySearchBusTest@179ece50]" name="careers" duration-ms="10390" started-at="2021-07-02T17:59:22Z" finished-at="2021-07-02T17:59:32Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#src"}
+  (Session info: headless chrome=91.0.4472.124)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SIDDHANTPANDA', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\SIDDHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50941}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 82429e75969e8c97fdea2e2667b6a0de
+*** Element info: {Using=id, value=src}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#src"}
+  (Session info: headless chrome=91.0.4472.124)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SIDDHANTPANDA', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\SIDDHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50941}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 82429e75969e8c97fdea2e2667b6a0de
+*** Element info: {Using=id, value=src}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+at org.openqa.selenium.By$ById.findElement(By.java:188)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy9.sendKeys(Unknown Source)
+at pages.modifySearchBusPage.selectsource(modifySearchBusPage.java:43)
+at tests.modifySearchBusTest.careers(modifySearchBusTest.java:33)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- careers -->
+        <test-method status="PASS" signature="attachScreenShot(org.testng.ITestResult)[pri:0, instance:tests.modifySearchBusTest@179ece50]" name="attachScreenShot" is-config="true" duration-ms="206" started-at="2021-07-02T17:59:32Z" finished-at="2021-07-02T17:59:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=careers status=FAILURE method=modifySearchBusTest.careers()[pri:0, instance:tests.modifySearchBusTest@179ece50] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- attachScreenShot -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.modifySearchBusTest@179ece50]" name="closeBrowser" is-config="true" duration-ms="684" started-at="2021-07-02T17:59:32Z" finished-at="2021-07-02T17:59:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- tests.modifySearchBusTest -->
+      <class name="tests.sectionInfoTest">
+        <test-method status="PASS" signature="intializeWebdriver()[pri:0, instance:tests.sectionInfoTest@7eac9008]" name="intializeWebdriver" is-config="true" duration-ms="1505" started-at="2021-07-02T18:00:26Z" finished-at="2021-07-02T18:00:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intializeWebdriver -->
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:tests.sectionInfoTest@7eac9008]" name="openBrowser" is-config="true" duration-ms="470" started-at="2021-07-02T18:00:27Z" finished-at="2021-07-02T18:00:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="FAIL" signature="agentRegistration()[pri:0, instance:tests.sectionInfoTest@7eac9008]" name="agentRegistration" duration-ms="10048" started-at="2021-07-02T18:00:28Z" finished-at="2021-07-02T18:00:38Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Agent Registration')]"}
+  (Session info: headless chrome=91.0.4472.124)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SIDDHANTPANDA', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\SIDDHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63122}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f668872946434159979d0852bc978b25
+*** Element info: {Using=xpath, value=//a[contains(text(),'Agent Registration')]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Agent Registration')]"}
+  (Session info: headless chrome=91.0.4472.124)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SIDDHANTPANDA', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\SIDDHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63122}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f668872946434159979d0852bc978b25
+*** Element info: {Using=xpath, value=//a[contains(text(),'Agent Registration')]}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy9.sendKeys(Unknown Source)
+at pages.sectionInfoPage.navitoagentRegistration(sectionInfoPage.java:98)
+at tests.sectionInfoTest.agentRegistration(sectionInfoTest.java:147)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- agentRegistration -->
+        <test-method status="PASS" signature="attachScreenShot(org.testng.ITestResult)[pri:0, instance:tests.sectionInfoTest@7eac9008]" name="attachScreenShot" is-config="true" duration-ms="118" started-at="2021-07-02T18:00:38Z" finished-at="2021-07-02T18:00:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=agentRegistration status=FAILURE method=sectionInfoTest.agentRegistration()[pri:0, instance:tests.sectionInfoTest@7eac9008] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- attachScreenShot -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.sectionInfoTest@7eac9008]" name="closeBrowser" is-config="true" duration-ms="663" started-at="2021-07-02T18:00:38Z" finished-at="2021-07-02T18:00:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="intializeWebdriver()[pri:0, instance:tests.sectionInfoTest@7eac9008]" name="intializeWebdriver" is-config="true" duration-ms="1512" started-at="2021-07-02T18:00:39Z" finished-at="2021-07-02T18:00:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intializeWebdriver -->
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:tests.sectionInfoTest@7eac9008]" name="openBrowser" is-config="true" duration-ms="452" started-at="2021-07-02T18:00:40Z" finished-at="2021-07-02T18:00:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="FAIL" signature="blogSection()[pri:0, instance:tests.sectionInfoTest@7eac9008]" name="blogSection" duration-ms="10082" started-at="2021-07-02T18:00:41Z" finished-at="2021-07-02T18:00:51Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Blog')]"}
+  (Session info: headless chrome=91.0.4472.124)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SIDDHANTPANDA', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\SIDDHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61642}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d3a8eea2d6385c4fca26713cfe8f4d3d
+*** Element info: {Using=xpath, value=//a[contains(text(),'Blog')]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Blog')]"}
+  (Session info: headless chrome=91.0.4472.124)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SIDDHANTPANDA', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\SIDDHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61642}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d3a8eea2d6385c4fca26713cfe8f4d3d
+*** Element info: {Using=xpath, value=//a[contains(text(),'Blog')]}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy9.sendKeys(Unknown Source)
+at pages.sectionInfoPage.navitoblog(sectionInfoPage.java:71)
+at tests.sectionInfoTest.blogSection(sectionInfoTest.java:87)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- blogSection -->
+        <test-method status="PASS" signature="attachScreenShot(org.testng.ITestResult)[pri:0, instance:tests.sectionInfoTest@7eac9008]" name="attachScreenShot" is-config="true" duration-ms="163" started-at="2021-07-02T18:00:51Z" finished-at="2021-07-02T18:00:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=blogSection status=FAILURE method=sectionInfoTest.blogSection()[pri:0, instance:tests.sectionInfoTest@7eac9008] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- attachScreenShot -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.sectionInfoTest@7eac9008]" name="closeBrowser" is-config="true" duration-ms="714" started-at="2021-07-02T18:00:51Z" finished-at="2021-07-02T18:00:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="intializeWebdriver()[pri:0, instance:tests.sectionInfoTest@7eac9008]" name="intializeWebdriver" is-config="true" duration-ms="1427" started-at="2021-07-02T18:00:52Z" finished-at="2021-07-02T18:00:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intializeWebdriver -->
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:tests.sectionInfoTest@7eac9008]" name="openBrowser" is-config="true" duration-ms="468" started-at="2021-07-02T18:00:53Z" finished-at="2021-07-02T18:00:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="FAIL" signature="faqsection()[pri:0, instance:tests.sectionInfoTest@7eac9008]" name="faqsection" duration-ms="10056" started-at="2021-07-02T18:00:54Z" finished-at="2021-07-02T18:01:04Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'FAQ')]"}
+  (Session info: headless chrome=91.0.4472.124)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SIDDHANTPANDA', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\SIDDHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56118}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 55d2277ffe249fe97cb1fed5ae867625
+*** Element info: {Using=xpath, value=//a[contains(text(),'FAQ')]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'FAQ')]"}
+  (Session info: headless chrome=91.0.4472.124)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SIDDHANTPANDA', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\SIDDHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56118}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 55d2277ffe249fe97cb1fed5ae867625
+*** Element info: {Using=xpath, value=//a[contains(text(),'FAQ')]}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy9.sendKeys(Unknown Source)
+at pages.sectionInfoPage.navitofaq(sectionInfoPage.java:65)
+at tests.sectionInfoTest.faqsection(sectionInfoTest.java:67)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- faqsection -->
+        <test-method status="PASS" signature="attachScreenShot(org.testng.ITestResult)[pri:0, instance:tests.sectionInfoTest@7eac9008]" name="attachScreenShot" is-config="true" duration-ms="126" started-at="2021-07-02T18:01:04Z" finished-at="2021-07-02T18:01:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=faqsection status=FAILURE method=sectionInfoTest.faqsection()[pri:0, instance:tests.sectionInfoTest@7eac9008] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- attachScreenShot -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.sectionInfoTest@7eac9008]" name="closeBrowser" is-config="true" duration-ms="791" started-at="2021-07-02T18:01:04Z" finished-at="2021-07-02T18:01:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="intializeWebdriver()[pri:0, instance:tests.sectionInfoTest@7eac9008]" name="intializeWebdriver" is-config="true" duration-ms="1584" started-at="2021-07-02T18:01:04Z" finished-at="2021-07-02T18:01:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intializeWebdriver -->
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:tests.sectionInfoTest@7eac9008]" name="openBrowser" is-config="true" duration-ms="909" started-at="2021-07-02T18:01:06Z" finished-at="2021-07-02T18:01:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="FAIL" signature="insuranceSection()[pri:0, instance:tests.sectionInfoTest@7eac9008]" name="insuranceSection" duration-ms="10094" started-at="2021-07-02T18:01:07Z" finished-at="2021-07-02T18:01:17Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Insurance Partner')]"}
+  (Session info: headless chrome=91.0.4472.124)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SIDDHANTPANDA', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\SIDDHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62096}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 70a59f149db9a7d100c9aad3ecc350a6
+*** Element info: {Using=xpath, value=//a[contains(text(),'Insurance Partner')]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Insurance Partner')]"}
+  (Session info: headless chrome=91.0.4472.124)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SIDDHANTPANDA', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\SIDDHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62096}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 70a59f149db9a7d100c9aad3ecc350a6
+*** Element info: {Using=xpath, value=//a[contains(text(),'Insurance Partner')]}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy9.sendKeys(Unknown Source)
+at pages.sectionInfoPage.navitoinsurance(sectionInfoPage.java:86)
+at tests.sectionInfoTest.insuranceSection(sectionInfoTest.java:107)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- insuranceSection -->
+        <test-method status="PASS" signature="attachScreenShot(org.testng.ITestResult)[pri:0, instance:tests.sectionInfoTest@7eac9008]" name="attachScreenShot" is-config="true" duration-ms="149" started-at="2021-07-02T18:01:17Z" finished-at="2021-07-02T18:01:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=insuranceSection status=FAILURE method=sectionInfoTest.insuranceSection()[pri:0, instance:tests.sectionInfoTest@7eac9008] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- attachScreenShot -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.sectionInfoTest@7eac9008]" name="closeBrowser" is-config="true" duration-ms="701" started-at="2021-07-02T18:01:17Z" finished-at="2021-07-02T18:01:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="intializeWebdriver()[pri:0, instance:tests.sectionInfoTest@7eac9008]" name="intializeWebdriver" is-config="true" duration-ms="1490" started-at="2021-07-02T18:01:18Z" finished-at="2021-07-02T18:01:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intializeWebdriver -->
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:tests.sectionInfoTest@7eac9008]" name="openBrowser" is-config="true" duration-ms="761" started-at="2021-07-02T18:01:19Z" finished-at="2021-07-02T18:01:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="FAIL" signature="privacyPolicysection()[pri:0, instance:tests.sectionInfoTest@7eac9008]" name="privacyPolicysection" duration-ms="10039" started-at="2021-07-02T18:01:20Z" finished-at="2021-07-02T18:01:30Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Privacy Policy')]"}
+  (Session info: headless chrome=91.0.4472.124)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SIDDHANTPANDA', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\SIDDHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49527}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a6e604f951d1dad513b49936b2833e2d
+*** Element info: {Using=xpath, value=//a[contains(text(),'Privacy Policy')]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Privacy Policy')]"}
+  (Session info: headless chrome=91.0.4472.124)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SIDDHANTPANDA', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\SIDDHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49527}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a6e604f951d1dad513b49936b2833e2d
+*** Element info: {Using=xpath, value=//a[contains(text(),'Privacy Policy')]}
+at sun.reflect.GeneratedConstructorAccessor24.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy9.sendKeys(Unknown Source)
+at pages.sectionInfoPage.navitoprivacypolicy(sectionInfoPage.java:59)
+at tests.sectionInfoTest.privacyPolicysection(sectionInfoTest.java:46)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- privacyPolicysection -->
+        <test-method status="PASS" signature="attachScreenShot(org.testng.ITestResult)[pri:0, instance:tests.sectionInfoTest@7eac9008]" name="attachScreenShot" is-config="true" duration-ms="169" started-at="2021-07-02T18:01:30Z" finished-at="2021-07-02T18:01:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=privacyPolicysection status=FAILURE method=sectionInfoTest.privacyPolicysection()[pri:0, instance:tests.sectionInfoTest@7eac9008] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- attachScreenShot -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.sectionInfoTest@7eac9008]" name="closeBrowser" is-config="true" duration-ms="694" started-at="2021-07-02T18:01:30Z" finished-at="2021-07-02T18:01:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="intializeWebdriver()[pri:0, instance:tests.sectionInfoTest@7eac9008]" name="intializeWebdriver" is-config="true" duration-ms="1560" started-at="2021-07-02T18:01:31Z" finished-at="2021-07-02T18:01:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intializeWebdriver -->
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:tests.sectionInfoTest@7eac9008]" name="openBrowser" is-config="true" duration-ms="422" started-at="2021-07-02T18:01:33Z" finished-at="2021-07-02T18:01:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="FAIL" signature="termAndCondition()[pri:0, instance:tests.sectionInfoTest@7eac9008]" name="termAndCondition" duration-ms="10108" started-at="2021-07-02T18:01:33Z" finished-at="2021-07-02T18:01:43Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'T & C')]"}
+  (Session info: headless chrome=91.0.4472.124)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SIDDHANTPANDA', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\SIDDHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63452}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 05c599330f4515e1bbe2da722aaf35bd
+*** Element info: {Using=xpath, value=//a[contains(text(),'T & C')]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'T & C')]"}
+  (Session info: headless chrome=91.0.4472.124)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SIDDHANTPANDA', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\SIDDHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63452}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 05c599330f4515e1bbe2da722aaf35bd
+*** Element info: {Using=xpath, value=//a[contains(text(),'T & C')]}
+at sun.reflect.GeneratedConstructorAccessor24.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy9.sendKeys(Unknown Source)
+at pages.sectionInfoPage.naviToTC(sectionInfoPage.java:53)
+at tests.sectionInfoTest.termAndCondition(sectionInfoTest.java:26)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- termAndCondition -->
+        <test-method status="PASS" signature="attachScreenShot(org.testng.ITestResult)[pri:0, instance:tests.sectionInfoTest@7eac9008]" name="attachScreenShot" is-config="true" duration-ms="185" started-at="2021-07-02T18:01:43Z" finished-at="2021-07-02T18:01:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=termAndCondition status=FAILURE method=sectionInfoTest.termAndCondition()[pri:0, instance:tests.sectionInfoTest@7eac9008] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- attachScreenShot -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.sectionInfoTest@7eac9008]" name="closeBrowser" is-config="true" duration-ms="778" started-at="2021-07-02T18:01:43Z" finished-at="2021-07-02T18:01:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="intializeWebdriver()[pri:0, instance:tests.sectionInfoTest@7eac9008]" name="intializeWebdriver" is-config="true" duration-ms="1570" started-at="2021-07-02T18:01:44Z" finished-at="2021-07-02T18:01:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intializeWebdriver -->
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:tests.sectionInfoTest@7eac9008]" name="openBrowser" is-config="true" duration-ms="367" started-at="2021-07-02T18:01:46Z" finished-at="2021-07-02T18:01:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="FAIL" signature="userAgreementSection()[pri:0, instance:tests.sectionInfoTest@7eac9008]" name="userAgreementSection" duration-ms="10054" started-at="2021-07-02T18:01:46Z" finished-at="2021-07-02T18:01:56Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'User Agreement')]"}
+  (Session info: headless chrome=91.0.4472.124)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SIDDHANTPANDA', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\SIDDHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55126}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e294625e8fda93a8c23b7e7428db64f8
+*** Element info: {Using=xpath, value=//a[contains(text(),'User Agreement')]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'User Agreement')]"}
+  (Session info: headless chrome=91.0.4472.124)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SIDDHANTPANDA', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\SIDDHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55126}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e294625e8fda93a8c23b7e7428db64f8
+*** Element info: {Using=xpath, value=//a[contains(text(),'User Agreement')]}
+at sun.reflect.GeneratedConstructorAccessor24.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy9.sendKeys(Unknown Source)
+at pages.sectionInfoPage.navitouseragreement(sectionInfoPage.java:92)
+at tests.sectionInfoTest.userAgreementSection(sectionInfoTest.java:127)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userAgreementSection -->
+        <test-method status="PASS" signature="attachScreenShot(org.testng.ITestResult)[pri:0, instance:tests.sectionInfoTest@7eac9008]" name="attachScreenShot" is-config="true" duration-ms="89" started-at="2021-07-02T18:01:56Z" finished-at="2021-07-02T18:01:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=userAgreementSection status=FAILURE method=sectionInfoTest.userAgreementSection()[pri:0, instance:tests.sectionInfoTest@7eac9008] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- attachScreenShot -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.sectionInfoTest@7eac9008]" name="closeBrowser" is-config="true" duration-ms="602" started-at="2021-07-02T18:01:56Z" finished-at="2021-07-02T18:01:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- tests.sectionInfoTest -->
+      <class name="tests.contactTest">
+        <test-method status="PASS" signature="intializeWebdriver()[pri:0, instance:tests.contactTest@6f03482]" name="intializeWebdriver" is-config="true" duration-ms="1883" started-at="2021-07-02T17:58:48Z" finished-at="2021-07-02T17:58:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intializeWebdriver -->
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:tests.contactTest@6f03482]" name="openBrowser" is-config="true" duration-ms="468" started-at="2021-07-02T17:58:50Z" finished-at="2021-07-02T17:58:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="FAIL" signature="ContactRedBus()[pri:0, instance:tests.contactTest@6f03482]" name="ContactRedBus" duration-ms="10038" started-at="2021-07-02T17:58:51Z" finished-at="2021-07-02T17:59:01Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Contact Us')]"}
+  (Session info: headless chrome=91.0.4472.124)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SIDDHANTPANDA', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\SIDDHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50939}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 48af2877aaabbe35f5d1d7cc5838a665
+*** Element info: {Using=xpath, value=//a[contains(text(),'Contact Us')]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Contact Us')]"}
+  (Session info: headless chrome=91.0.4472.124)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SIDDHANTPANDA', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\SIDDHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50939}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 48af2877aaabbe35f5d1d7cc5838a665
+*** Element info: {Using=xpath, value=//a[contains(text(),'Contact Us')]}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy9.sendKeys(Unknown Source)
+at pages.contactPage.contactUsButton(contactPage.java:30)
+at tests.contactTest.ContactRedBus(contactTest.java:26)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ContactRedBus -->
+        <test-method status="PASS" signature="attachScreenShot(org.testng.ITestResult)[pri:0, instance:tests.contactTest@6f03482]" name="attachScreenShot" is-config="true" duration-ms="218" started-at="2021-07-02T17:59:01Z" finished-at="2021-07-02T17:59:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ContactRedBus status=FAILURE method=contactTest.ContactRedBus()[pri:0, instance:tests.contactTest@6f03482] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- attachScreenShot -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.contactTest@6f03482]" name="closeBrowser" is-config="true" duration-ms="606" started-at="2021-07-02T17:59:01Z" finished-at="2021-07-02T17:59:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- tests.contactTest -->
+      <class name="tests.bookingchangeTravelDateTest">
+        <test-method status="PASS" signature="intializeWebdriver()[pri:0, instance:tests.bookingchangeTravelDateTest@3eb738bb]" name="intializeWebdriver" is-config="true" duration-ms="1565" started-at="2021-07-02T17:57:57Z" finished-at="2021-07-02T17:57:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intializeWebdriver -->
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:tests.bookingchangeTravelDateTest@3eb738bb]" name="openBrowser" is-config="true" duration-ms="470" started-at="2021-07-02T17:57:59Z" finished-at="2021-07-02T17:57:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="FAIL" signature="TravelDate()[pri:0, instance:tests.bookingchangeTravelDateTest@3eb738bb]" name="TravelDate" duration-ms="10099" started-at="2021-07-02T17:57:59Z" finished-at="2021-07-02T17:58:09Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Manage Booking')]"}
+  (Session info: headless chrome=91.0.4472.124)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SIDDHANTPANDA', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\SIDDHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62932}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 86b3090bcf210eeeeb4933a44d2063f6
+*** Element info: {Using=xpath, value=//div[contains(text(),'Manage Booking')]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Manage Booking')]"}
+  (Session info: headless chrome=91.0.4472.124)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SIDDHANTPANDA', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\SIDDHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62932}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 86b3090bcf210eeeeb4933a44d2063f6
+*** Element info: {Using=xpath, value=//div[contains(text(),'Manage Booking')]}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy9.click(Unknown Source)
+at pages.bookingManagingPage.travelDate(bookingManagingPage.java:39)
+at tests.bookingchangeTravelDateTest.TravelDate(bookingchangeTravelDateTest.java:27)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TravelDate -->
+        <test-method status="PASS" signature="attachScreenShot(org.testng.ITestResult)[pri:0, instance:tests.bookingchangeTravelDateTest@3eb738bb]" name="attachScreenShot" is-config="true" duration-ms="163" started-at="2021-07-02T17:58:09Z" finished-at="2021-07-02T17:58:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TravelDate status=FAILURE method=bookingchangeTravelDateTest.TravelDate()[pri:0, instance:tests.bookingchangeTravelDateTest@3eb738bb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- attachScreenShot -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.bookingchangeTravelDateTest@3eb738bb]" name="closeBrowser" is-config="true" duration-ms="736" started-at="2021-07-02T17:58:09Z" finished-at="2021-07-02T17:58:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- tests.bookingchangeTravelDateTest -->
+      <class name="tests.busOperatorTest">
+        <test-method status="PASS" signature="intializeWebdriver()[pri:0, instance:tests.busOperatorTest@1e800aaa]" name="intializeWebdriver" is-config="true" duration-ms="1503" started-at="2021-07-02T17:58:23Z" finished-at="2021-07-02T17:58:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intializeWebdriver -->
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:tests.busOperatorTest@1e800aaa]" name="openBrowser" is-config="true" duration-ms="487" started-at="2021-07-02T17:58:24Z" finished-at="2021-07-02T17:58:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="FAIL" signature="all_bus_operators()[pri:0, instance:tests.busOperatorTest@1e800aaa]" name="all_bus_operators" duration-ms="10070" started-at="2021-07-02T17:58:25Z" finished-at="2021-07-02T17:58:35Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'All Operators >')]"}
+  (Session info: headless chrome=91.0.4472.124)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SIDDHANTPANDA', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\SIDDHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50426}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 659262aab4114d29d3e2770c678231c0
+*** Element info: {Using=xpath, value=//a[contains(text(),'All Operators >')]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'All Operators >')]"}
+  (Session info: headless chrome=91.0.4472.124)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SIDDHANTPANDA', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\SIDDHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50426}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 659262aab4114d29d3e2770c678231c0
+*** Element info: {Using=xpath, value=//a[contains(text(),'All Operators >')]}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy9.sendKeys(Unknown Source)
+at pages.busOperatorPage.all_operators(busOperatorPage.java:29)
+at tests.busOperatorTest.all_bus_operators(busOperatorTest.java:22)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- all_bus_operators -->
+        <test-method status="PASS" signature="attachScreenShot(org.testng.ITestResult)[pri:0, instance:tests.busOperatorTest@1e800aaa]" name="attachScreenShot" is-config="true" duration-ms="118" started-at="2021-07-02T17:58:35Z" finished-at="2021-07-02T17:58:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=all_bus_operators status=FAILURE method=busOperatorTest.all_bus_operators()[pri:0, instance:tests.busOperatorTest@1e800aaa] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- attachScreenShot -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.busOperatorTest@1e800aaa]" name="closeBrowser" is-config="true" duration-ms="674" started-at="2021-07-02T17:58:35Z" finished-at="2021-07-02T17:58:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- tests.busOperatorTest -->
+      <class name="tests.partnerWebsiteTest">
+        <test-method status="PASS" signature="intializeWebdriver()[pri:0, instance:tests.partnerWebsiteTest@3cd3e762]" name="intializeWebdriver" is-config="true" duration-ms="1495" started-at="2021-07-02T17:59:47Z" finished-at="2021-07-02T17:59:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intializeWebdriver -->
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:tests.partnerWebsiteTest@3cd3e762]" name="openBrowser" is-config="true" duration-ms="802" started-at="2021-07-02T17:59:48Z" finished-at="2021-07-02T17:59:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="FAIL" signature="partnerWebsitesgoibibosite()[pri:0, instance:tests.partnerWebsiteTest@3cd3e762]" name="partnerWebsitesgoibibosite" duration-ms="10061" started-at="2021-07-02T17:59:49Z" finished-at="2021-07-02T17:59:59Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Goibibo')]"}
+  (Session info: headless chrome=91.0.4472.124)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SIDDHANTPANDA', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\SIDDHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61185}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d779088ab6a5f64917dfd88db532f1c8
+*** Element info: {Using=xpath, value=//a[contains(text(),'Goibibo')]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Goibibo')]"}
+  (Session info: headless chrome=91.0.4472.124)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SIDDHANTPANDA', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\SIDDHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61185}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d779088ab6a5f64917dfd88db532f1c8
+*** Element info: {Using=xpath, value=//a[contains(text(),'Goibibo')]}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy9.click(Unknown Source)
+at pages.partnerWebsitePage.goToGoibiboSite(partnerWebsitePage.java:26)
+at tests.partnerWebsiteTest.partnerWebsitesgoibibosite(partnerWebsiteTest.java:26)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- partnerWebsitesgoibibosite -->
+        <test-method status="PASS" signature="attachScreenShot(org.testng.ITestResult)[pri:0, instance:tests.partnerWebsiteTest@3cd3e762]" name="attachScreenShot" is-config="true" duration-ms="175" started-at="2021-07-02T17:59:59Z" finished-at="2021-07-02T17:59:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=partnerWebsitesgoibibosite status=FAILURE method=partnerWebsiteTest.partnerWebsitesgoibibosite()[pri:0, instance:tests.partnerWebsiteTest@3cd3e762] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- attachScreenShot -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.partnerWebsiteTest@3cd3e762]" name="closeBrowser" is-config="true" duration-ms="677" started-at="2021-07-02T17:59:59Z" finished-at="2021-07-02T18:00:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="intializeWebdriver()[pri:0, instance:tests.partnerWebsiteTest@3cd3e762]" name="intializeWebdriver" is-config="true" duration-ms="1572" started-at="2021-07-02T18:00:00Z" finished-at="2021-07-02T18:00:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intializeWebdriver -->
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:tests.partnerWebsiteTest@3cd3e762]" name="openBrowser" is-config="true" duration-ms="761" started-at="2021-07-02T18:00:01Z" finished-at="2021-07-02T18:00:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="FAIL" signature="partnerWebsitesmakemytrip()[pri:0, instance:tests.partnerWebsiteTest@3cd3e762]" name="partnerWebsitesmakemytrip" duration-ms="10044" started-at="2021-07-02T18:00:02Z" finished-at="2021-07-02T18:00:12Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Makemytrip')]"}
+  (Session info: headless chrome=91.0.4472.124)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SIDDHANTPANDA', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\SIDDHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52519}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 06e8a15abc5087d54423e81a69846784
+*** Element info: {Using=xpath, value=//a[contains(text(),'Makemytrip')]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Makemytrip')]"}
+  (Session info: headless chrome=91.0.4472.124)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SIDDHANTPANDA', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\SIDDHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52519}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 06e8a15abc5087d54423e81a69846784
+*** Element info: {Using=xpath, value=//a[contains(text(),'Makemytrip')]}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy9.click(Unknown Source)
+at pages.partnerWebsitePage.goToMakemytripSite(partnerWebsitePage.java:32)
+at tests.partnerWebsiteTest.partnerWebsitesmakemytrip(partnerWebsiteTest.java:46)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- partnerWebsitesmakemytrip -->
+        <test-method status="PASS" signature="attachScreenShot(org.testng.ITestResult)[pri:0, instance:tests.partnerWebsiteTest@3cd3e762]" name="attachScreenShot" is-config="true" duration-ms="103" started-at="2021-07-02T18:00:12Z" finished-at="2021-07-02T18:00:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=partnerWebsitesmakemytrip status=FAILURE method=partnerWebsiteTest.partnerWebsitesmakemytrip()[pri:0, instance:tests.partnerWebsiteTest@3cd3e762] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- attachScreenShot -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.partnerWebsiteTest@3cd3e762]" name="closeBrowser" is-config="true" duration-ms="759" started-at="2021-07-02T18:00:12Z" finished-at="2021-07-02T18:00:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- tests.partnerWebsiteTest -->
       <class name="tests.helpTest">
-        <test-method status="PASS" signature="intializeWebdriver()[pri:0, instance:tests.helpTest@233795b6]" name="intializeWebdriver" is-config="true" duration-ms="1115" started-at="2021-07-02T10:23:43Z" finished-at="2021-07-02T10:23:44Z">
+        <test-method status="PASS" signature="intializeWebdriver()[pri:0, instance:tests.helpTest@9d5509a]" name="intializeWebdriver" is-config="true" duration-ms="1661" started-at="2021-07-02T17:59:01Z" finished-at="2021-07-02T17:59:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- intializeWebdriver -->
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:tests.helpTest@233795b6]" name="openBrowser" is-config="true" duration-ms="22029" started-at="2021-07-02T10:23:44Z" finished-at="2021-07-02T10:24:06Z">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:tests.helpTest@9d5509a]" name="openBrowser" is-config="true" duration-ms="546" started-at="2021-07-02T17:59:03Z" finished-at="2021-07-02T17:59:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="careers()[pri:0, instance:tests.helpTest@233795b6]" name="careers" duration-ms="2274" started-at="2021-07-02T10:24:06Z" finished-at="2021-07-02T10:24:09Z">
+        <test-method status="FAIL" signature="careers()[pri:0, instance:tests.helpTest@9d5509a]" name="careers" duration-ms="10053" started-at="2021-07-02T17:59:04Z" finished-at="2021-07-02T17:59:14Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Help')]"}
+  (Session info: headless chrome=91.0.4472.124)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SIDDHANTPANDA', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\SIDDHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61226}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cb86fe58611f2f2e20d45c4d0f468c5d
+*** Element info: {Using=xpath, value=//a[contains(text(),'Help')]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Help')]"}
+  (Session info: headless chrome=91.0.4472.124)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SIDDHANTPANDA', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\SIDDHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61226}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: cb86fe58611f2f2e20d45c4d0f468c5d
+*** Element info: {Using=xpath, value=//a[contains(text(),'Help')]}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy9.click(Unknown Source)
+at pages.helpPage.naviHelpSection(helpPage.java:26)
+at tests.helpTest.careers(helpTest.java:16)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- careers -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.helpTest@233795b6]" name="closeBrowser" is-config="true" duration-ms="724" started-at="2021-07-02T10:24:09Z" finished-at="2021-07-02T10:24:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="attachScreenShot(org.testng.ITestResult)[pri:0, instance:tests.helpTest@233795b6]" name="attachScreenShot" is-config="true" duration-ms="0" started-at="2021-07-02T10:24:09Z" finished-at="2021-07-02T10:24:09Z">
+        <test-method status="PASS" signature="attachScreenShot(org.testng.ITestResult)[pri:0, instance:tests.helpTest@9d5509a]" name="attachScreenShot" is-config="true" duration-ms="212" started-at="2021-07-02T17:59:14Z" finished-at="2021-07-02T17:59:14Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=careers status=SUCCESS method=helpTest.careers()[pri:0, instance:tests.helpTest@233795b6] output={null}]]]>
+                <![CDATA[[TestResult name=careers status=FAILURE method=helpTest.careers()[pri:0, instance:tests.helpTest@9d5509a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- attachScreenShot -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.helpTest@9d5509a]" name="closeBrowser" is-config="true" duration-ms="830" started-at="2021-07-02T17:59:14Z" finished-at="2021-07-02T17:59:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
       </class> <!-- tests.helpTest -->
-      <class name="tests.modifySearchBusTest">
-        <test-method status="PASS" signature="intializeWebdriver()[pri:0, instance:tests.modifySearchBusTest@3eb738bb]" name="intializeWebdriver" is-config="true" duration-ms="1101" started-at="2021-07-02T10:24:09Z" finished-at="2021-07-02T10:24:10Z">
+      <class name="tests.rpoolTest">
+        <test-method status="PASS" signature="intializeWebdriver()[pri:0, instance:tests.rpoolTest@1fa121e2]" name="intializeWebdriver" is-config="true" duration-ms="1667" started-at="2021-07-02T18:00:13Z" finished-at="2021-07-02T18:00:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- intializeWebdriver -->
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:tests.modifySearchBusTest@3eb738bb]" name="openBrowser" is-config="true" duration-ms="21986" started-at="2021-07-02T10:24:10Z" finished-at="2021-07-02T10:24:32Z">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:tests.rpoolTest@1fa121e2]" name="openBrowser" is-config="true" duration-ms="403" started-at="2021-07-02T18:00:15Z" finished-at="2021-07-02T18:00:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="careers()[pri:0, instance:tests.modifySearchBusTest@3eb738bb]" name="careers" duration-ms="36343" started-at="2021-07-02T10:24:32Z" finished-at="2021-07-02T10:25:09Z">
+        <test-method status="FAIL" signature="rPoolfunctionality()[pri:0, instance:tests.rpoolTest@1fa121e2]" name="rPoolfunctionality" duration-ms="10047" started-at="2021-07-02T18:00:15Z" finished-at="2021-07-02T18:00:25Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#cars"}
+  (Session info: headless chrome=91.0.4472.124)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SIDDHANTPANDA', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\SIDDHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64816}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 57ae4fc6313aa56271b3ad1848170d50
+*** Element info: {Using=id, value=cars}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#cars"}
+  (Session info: headless chrome=91.0.4472.124)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SIDDHANTPANDA', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\SIDDHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64816}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 57ae4fc6313aa56271b3ad1848170d50
+*** Element info: {Using=id, value=cars}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+at org.openqa.selenium.By$ById.findElement(By.java:188)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy9.click(Unknown Source)
+at pages.rpoolPage.naviTorPool(rpoolPage.java:29)
+at tests.rpoolTest.rPoolfunctionality(rpoolTest.java:28)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- careers -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.modifySearchBusTest@3eb738bb]" name="closeBrowser" is-config="true" duration-ms="4730" started-at="2021-07-02T10:25:09Z" finished-at="2021-07-02T10:25:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="attachScreenShot(org.testng.ITestResult)[pri:0, instance:tests.modifySearchBusTest@3eb738bb]" name="attachScreenShot" is-config="true" duration-ms="0" started-at="2021-07-02T10:25:09Z" finished-at="2021-07-02T10:25:09Z">
+        </test-method> <!-- rPoolfunctionality -->
+        <test-method status="PASS" signature="attachScreenShot(org.testng.ITestResult)[pri:0, instance:tests.rpoolTest@1fa121e2]" name="attachScreenShot" is-config="true" duration-ms="153" started-at="2021-07-02T18:00:25Z" finished-at="2021-07-02T18:00:25Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=careers status=SUCCESS method=modifySearchBusTest.careers()[pri:0, instance:tests.modifySearchBusTest@3eb738bb] output={null}]]]>
+                <![CDATA[[TestResult name=rPoolfunctionality status=FAILURE method=rpoolTest.rPoolfunctionality()[pri:0, instance:tests.rpoolTest@1fa121e2] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- attachScreenShot -->
-      </class> <!-- tests.modifySearchBusTest -->
-      <class name="tests.sectionInfoTest">
-        <test-method status="PASS" signature="intializeWebdriver()[pri:0, instance:tests.sectionInfoTest@1e800aaa]" name="intializeWebdriver" is-config="true" duration-ms="1120" started-at="2021-07-02T10:25:27Z" finished-at="2021-07-02T10:25:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- intializeWebdriver -->
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:tests.sectionInfoTest@1e800aaa]" name="openBrowser" is-config="true" duration-ms="3090" started-at="2021-07-02T10:25:28Z" finished-at="2021-07-02T10:25:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="agentRegistration()[pri:0, instance:tests.sectionInfoTest@1e800aaa]" name="agentRegistration" duration-ms="5755" started-at="2021-07-02T10:25:31Z" finished-at="2021-07-02T10:25:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- agentRegistration -->
-        <test-method status="PASS" signature="attachScreenShot(org.testng.ITestResult)[pri:0, instance:tests.sectionInfoTest@1e800aaa]" name="attachScreenShot" is-config="true" duration-ms="1" started-at="2021-07-02T10:25:37Z" finished-at="2021-07-02T10:25:37Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=agentRegistration status=SUCCESS method=sectionInfoTest.agentRegistration()[pri:0, instance:tests.sectionInfoTest@1e800aaa] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- attachScreenShot -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.sectionInfoTest@1e800aaa]" name="closeBrowser" is-config="true" duration-ms="731" started-at="2021-07-02T10:25:37Z" finished-at="2021-07-02T10:25:38Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.rpoolTest@1fa121e2]" name="closeBrowser" is-config="true" duration-ms="655" started-at="2021-07-02T18:00:25Z" finished-at="2021-07-02T18:00:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="intializeWebdriver()[pri:0, instance:tests.sectionInfoTest@1e800aaa]" name="intializeWebdriver" is-config="true" duration-ms="1110" started-at="2021-07-02T10:25:38Z" finished-at="2021-07-02T10:25:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- intializeWebdriver -->
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:tests.sectionInfoTest@1e800aaa]" name="openBrowser" is-config="true" duration-ms="22028" started-at="2021-07-02T10:25:39Z" finished-at="2021-07-02T10:26:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="blogSection()[pri:0, instance:tests.sectionInfoTest@1e800aaa]" name="blogSection" duration-ms="4697" started-at="2021-07-02T10:26:01Z" finished-at="2021-07-02T10:26:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- blogSection -->
-        <test-method status="PASS" signature="attachScreenShot(org.testng.ITestResult)[pri:0, instance:tests.sectionInfoTest@1e800aaa]" name="attachScreenShot" is-config="true" duration-ms="0" started-at="2021-07-02T10:26:05Z" finished-at="2021-07-02T10:26:05Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=blogSection status=SUCCESS method=sectionInfoTest.blogSection()[pri:0, instance:tests.sectionInfoTest@1e800aaa] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- attachScreenShot -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.sectionInfoTest@1e800aaa]" name="closeBrowser" is-config="true" duration-ms="661" started-at="2021-07-02T10:26:05Z" finished-at="2021-07-02T10:26:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="intializeWebdriver()[pri:0, instance:tests.sectionInfoTest@1e800aaa]" name="intializeWebdriver" is-config="true" duration-ms="1227" started-at="2021-07-02T10:26:06Z" finished-at="2021-07-02T10:26:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- intializeWebdriver -->
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:tests.sectionInfoTest@1e800aaa]" name="openBrowser" is-config="true" duration-ms="1445" started-at="2021-07-02T10:26:07Z" finished-at="2021-07-02T10:26:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="faqsection()[pri:0, instance:tests.sectionInfoTest@1e800aaa]" name="faqsection" duration-ms="3003" started-at="2021-07-02T10:26:09Z" finished-at="2021-07-02T10:26:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- faqsection -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.sectionInfoTest@1e800aaa]" name="closeBrowser" is-config="true" duration-ms="689" started-at="2021-07-02T10:26:12Z" finished-at="2021-07-02T10:26:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="attachScreenShot(org.testng.ITestResult)[pri:0, instance:tests.sectionInfoTest@1e800aaa]" name="attachScreenShot" is-config="true" duration-ms="0" started-at="2021-07-02T10:26:12Z" finished-at="2021-07-02T10:26:12Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=faqsection status=SUCCESS method=sectionInfoTest.faqsection()[pri:0, instance:tests.sectionInfoTest@1e800aaa] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- attachScreenShot -->
-        <test-method status="PASS" signature="intializeWebdriver()[pri:0, instance:tests.sectionInfoTest@1e800aaa]" name="intializeWebdriver" is-config="true" duration-ms="1120" started-at="2021-07-02T10:26:12Z" finished-at="2021-07-02T10:26:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- intializeWebdriver -->
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:tests.sectionInfoTest@1e800aaa]" name="openBrowser" is-config="true" duration-ms="4494" started-at="2021-07-02T10:26:14Z" finished-at="2021-07-02T10:26:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="insuranceSection()[pri:0, instance:tests.sectionInfoTest@1e800aaa]" name="insuranceSection" duration-ms="3468" started-at="2021-07-02T10:26:18Z" finished-at="2021-07-02T10:26:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- insuranceSection -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.sectionInfoTest@1e800aaa]" name="closeBrowser" is-config="true" duration-ms="815" started-at="2021-07-02T10:26:22Z" finished-at="2021-07-02T10:26:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="attachScreenShot(org.testng.ITestResult)[pri:0, instance:tests.sectionInfoTest@1e800aaa]" name="attachScreenShot" is-config="true" duration-ms="0" started-at="2021-07-02T10:26:22Z" finished-at="2021-07-02T10:26:22Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=insuranceSection status=SUCCESS method=sectionInfoTest.insuranceSection()[pri:0, instance:tests.sectionInfoTest@1e800aaa] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- attachScreenShot -->
-        <test-method status="PASS" signature="intializeWebdriver()[pri:0, instance:tests.sectionInfoTest@1e800aaa]" name="intializeWebdriver" is-config="true" duration-ms="1158" started-at="2021-07-02T10:26:22Z" finished-at="2021-07-02T10:26:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- intializeWebdriver -->
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:tests.sectionInfoTest@1e800aaa]" name="openBrowser" is-config="true" duration-ms="1694" started-at="2021-07-02T10:26:24Z" finished-at="2021-07-02T10:26:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="privacyPolicysection()[pri:0, instance:tests.sectionInfoTest@1e800aaa]" name="privacyPolicysection" duration-ms="2299" started-at="2021-07-02T10:26:25Z" finished-at="2021-07-02T10:26:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- privacyPolicysection -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.sectionInfoTest@1e800aaa]" name="closeBrowser" is-config="true" duration-ms="798" started-at="2021-07-02T10:26:28Z" finished-at="2021-07-02T10:26:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="attachScreenShot(org.testng.ITestResult)[pri:0, instance:tests.sectionInfoTest@1e800aaa]" name="attachScreenShot" is-config="true" duration-ms="0" started-at="2021-07-02T10:26:28Z" finished-at="2021-07-02T10:26:28Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=privacyPolicysection status=SUCCESS method=sectionInfoTest.privacyPolicysection()[pri:0, instance:tests.sectionInfoTest@1e800aaa] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- attachScreenShot -->
-        <test-method status="PASS" signature="intializeWebdriver()[pri:0, instance:tests.sectionInfoTest@1e800aaa]" name="intializeWebdriver" is-config="true" duration-ms="1239" started-at="2021-07-02T10:26:28Z" finished-at="2021-07-02T10:26:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- intializeWebdriver -->
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:tests.sectionInfoTest@1e800aaa]" name="openBrowser" is-config="true" duration-ms="4273" started-at="2021-07-02T10:26:30Z" finished-at="2021-07-02T10:26:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="termAndCondition()[pri:0, instance:tests.sectionInfoTest@1e800aaa]" name="termAndCondition" duration-ms="2875" started-at="2021-07-02T10:26:34Z" finished-at="2021-07-02T10:26:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- termAndCondition -->
-        <test-method status="PASS" signature="attachScreenShot(org.testng.ITestResult)[pri:0, instance:tests.sectionInfoTest@1e800aaa]" name="attachScreenShot" is-config="true" duration-ms="1" started-at="2021-07-02T10:26:37Z" finished-at="2021-07-02T10:26:37Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=termAndCondition status=SUCCESS method=sectionInfoTest.termAndCondition()[pri:0, instance:tests.sectionInfoTest@1e800aaa] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- attachScreenShot -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.sectionInfoTest@1e800aaa]" name="closeBrowser" is-config="true" duration-ms="748" started-at="2021-07-02T10:26:37Z" finished-at="2021-07-02T10:26:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="intializeWebdriver()[pri:0, instance:tests.sectionInfoTest@1e800aaa]" name="intializeWebdriver" is-config="true" duration-ms="1217" started-at="2021-07-02T10:26:37Z" finished-at="2021-07-02T10:26:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- intializeWebdriver -->
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:tests.sectionInfoTest@1e800aaa]" name="openBrowser" is-config="true" duration-ms="22226" started-at="2021-07-02T10:26:39Z" finished-at="2021-07-02T10:27:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="userAgreementSection()[pri:0, instance:tests.sectionInfoTest@1e800aaa]" name="userAgreementSection" duration-ms="3064" started-at="2021-07-02T10:27:01Z" finished-at="2021-07-02T10:27:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- userAgreementSection -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.sectionInfoTest@1e800aaa]" name="closeBrowser" is-config="true" duration-ms="733" started-at="2021-07-02T10:27:04Z" finished-at="2021-07-02T10:27:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="attachScreenShot(org.testng.ITestResult)[pri:0, instance:tests.sectionInfoTest@1e800aaa]" name="attachScreenShot" is-config="true" duration-ms="0" started-at="2021-07-02T10:27:04Z" finished-at="2021-07-02T10:27:04Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=userAgreementSection status=SUCCESS method=sectionInfoTest.userAgreementSection()[pri:0, instance:tests.sectionInfoTest@1e800aaa] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- attachScreenShot -->
-      </class> <!-- tests.sectionInfoTest -->
-      <class name="tests.cancelBookingTest">
-        <test-method status="PASS" signature="intializeWebdriver()[pri:0, instance:tests.cancelBookingTest@477b4cdf]" name="intializeWebdriver" is-config="true" duration-ms="1099" started-at="2021-07-02T10:22:26Z" finished-at="2021-07-02T10:22:27Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- intializeWebdriver -->
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:tests.cancelBookingTest@477b4cdf]" name="openBrowser" is-config="true" duration-ms="22284" started-at="2021-07-02T10:22:27Z" finished-at="2021-07-02T10:22:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="careers()[pri:0, instance:tests.cancelBookingTest@477b4cdf]" name="careers" duration-ms="5744" started-at="2021-07-02T10:22:49Z" finished-at="2021-07-02T10:22:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- careers -->
-        <test-method status="PASS" signature="attachScreenShot(org.testng.ITestResult)[pri:0, instance:tests.cancelBookingTest@477b4cdf]" name="attachScreenShot" is-config="true" duration-ms="0" started-at="2021-07-02T10:22:55Z" finished-at="2021-07-02T10:22:55Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=careers status=SUCCESS method=cancelBookingTest.careers()[pri:0, instance:tests.cancelBookingTest@477b4cdf] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- attachScreenShot -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.cancelBookingTest@477b4cdf]" name="closeBrowser" is-config="true" duration-ms="683" started-at="2021-07-02T10:22:55Z" finished-at="2021-07-02T10:22:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- tests.cancelBookingTest -->
-      <class name="tests.contactTest">
-        <test-method status="PASS" signature="intializeWebdriver()[pri:0, instance:tests.contactTest@f5958c9]" name="intializeWebdriver" is-config="true" duration-ms="1228" started-at="2021-07-02T10:23:21Z" finished-at="2021-07-02T10:23:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- intializeWebdriver -->
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:tests.contactTest@f5958c9]" name="openBrowser" is-config="true" duration-ms="1761" started-at="2021-07-02T10:23:22Z" finished-at="2021-07-02T10:23:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="ContactRedBus()[pri:0, instance:tests.contactTest@f5958c9]" name="ContactRedBus" duration-ms="18360" started-at="2021-07-02T10:23:24Z" finished-at="2021-07-02T10:23:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ContactRedBus -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.contactTest@f5958c9]" name="closeBrowser" is-config="true" duration-ms="858" started-at="2021-07-02T10:23:42Z" finished-at="2021-07-02T10:23:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="attachScreenShot(org.testng.ITestResult)[pri:0, instance:tests.contactTest@f5958c9]" name="attachScreenShot" is-config="true" duration-ms="0" started-at="2021-07-02T10:23:42Z" finished-at="2021-07-02T10:23:42Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=ContactRedBus status=SUCCESS method=contactTest.ContactRedBus()[pri:0, instance:tests.contactTest@f5958c9] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- attachScreenShot -->
-      </class> <!-- tests.contactTest -->
+      </class> <!-- tests.rpoolTest -->
       <class name="tests.careerTest">
-        <test-method status="PASS" signature="intializeWebdriver()[pri:0, instance:tests.careerTest@77c2494c]" name="intializeWebdriver" is-config="true" duration-ms="1086" started-at="2021-07-02T10:22:55Z" finished-at="2021-07-02T10:22:57Z">
+        <test-method status="PASS" signature="intializeWebdriver()[pri:0, instance:tests.careerTest@185a6e9]" name="intializeWebdriver" is-config="true" duration-ms="1425" started-at="2021-07-02T17:58:36Z" finished-at="2021-07-02T17:58:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- intializeWebdriver -->
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:tests.careerTest@77c2494c]" name="openBrowser" is-config="true" duration-ms="16771" started-at="2021-07-02T10:22:57Z" finished-at="2021-07-02T10:23:13Z">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:tests.careerTest@185a6e9]" name="openBrowser" is-config="true" duration-ms="417" started-at="2021-07-02T17:58:37Z" finished-at="2021-07-02T17:58:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="careers()[pri:0, instance:tests.careerTest@77c2494c]" name="careers" duration-ms="6891" started-at="2021-07-02T10:23:13Z" finished-at="2021-07-02T10:23:20Z">
+        <test-method status="FAIL" signature="careers()[pri:0, instance:tests.careerTest@185a6e9]" name="careers" duration-ms="10052" started-at="2021-07-02T17:58:37Z" finished-at="2021-07-02T17:58:47Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Careers')]"}
+  (Session info: headless chrome=91.0.4472.124)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SIDDHANTPANDA', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\SIDDHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60926}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7f45af7eac525d948034a388ee071a08
+*** Element info: {Using=xpath, value=//a[contains(text(),'Careers')]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Careers')]"}
+  (Session info: headless chrome=91.0.4472.124)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SIDDHANTPANDA', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\SIDDHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60926}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7f45af7eac525d948034a388ee071a08
+*** Element info: {Using=xpath, value=//a[contains(text(),'Careers')]}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy9.sendKeys(Unknown Source)
+at pages.careerPage.careeerButton(careerPage.java:29)
+at tests.careerTest.careers(careerTest.java:14)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- careers -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.careerTest@77c2494c]" name="closeBrowser" is-config="true" duration-ms="748" started-at="2021-07-02T10:23:20Z" finished-at="2021-07-02T10:23:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="attachScreenShot(org.testng.ITestResult)[pri:0, instance:tests.careerTest@77c2494c]" name="attachScreenShot" is-config="true" duration-ms="0" started-at="2021-07-02T10:23:20Z" finished-at="2021-07-02T10:23:20Z">
+        <test-method status="PASS" signature="attachScreenShot(org.testng.ITestResult)[pri:0, instance:tests.careerTest@185a6e9]" name="attachScreenShot" is-config="true" duration-ms="178" started-at="2021-07-02T17:58:47Z" finished-at="2021-07-02T17:58:48Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=careers status=SUCCESS method=careerTest.careers()[pri:0, instance:tests.careerTest@77c2494c] output={null}]]]>
+                <![CDATA[[TestResult name=careers status=FAILURE method=careerTest.careers()[pri:0, instance:tests.careerTest@185a6e9] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- attachScreenShot -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.careerTest@185a6e9]" name="closeBrowser" is-config="true" duration-ms="627" started-at="2021-07-02T17:58:48Z" finished-at="2021-07-02T17:58:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
       </class> <!-- tests.careerTest -->
       <class name="tests.offerTest">
-        <test-method status="PASS" signature="intializeWebdriver()[pri:0, instance:tests.offerTest@5bda8e08]" name="intializeWebdriver" is-config="true" duration-ms="1200" started-at="2021-07-02T10:25:13Z" finished-at="2021-07-02T10:25:15Z">
+        <test-method status="PASS" signature="intializeWebdriver()[pri:0, instance:tests.offerTest@3b0090a4]" name="intializeWebdriver" is-config="true" duration-ms="1372" started-at="2021-07-02T17:59:33Z" finished-at="2021-07-02T17:59:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- intializeWebdriver -->
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:tests.offerTest@5bda8e08]" name="openBrowser" is-config="true" duration-ms="3332" started-at="2021-07-02T10:25:15Z" finished-at="2021-07-02T10:25:18Z">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:tests.offerTest@3b0090a4]" name="openBrowser" is-config="true" duration-ms="1288" started-at="2021-07-02T17:59:34Z" finished-at="2021-07-02T17:59:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="offers()[pri:0, instance:tests.offerTest@5bda8e08]" name="offers" duration-ms="8166" started-at="2021-07-02T10:25:18Z" finished-at="2021-07-02T10:25:26Z">
+        <test-method status="FAIL" signature="offers()[pri:0, instance:tests.offerTest@3b0090a4]" name="offers" duration-ms="10072" started-at="2021-07-02T17:59:35Z" finished-at="2021-07-02T17:59:46Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Offers')]"}
+  (Session info: headless chrome=91.0.4472.124)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SIDDHANTPANDA', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\SIDDHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55036}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: af7dc17883ffaa61ed7fbae93fced630
+*** Element info: {Using=xpath, value=//a[contains(text(),'Offers')]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Offers')]"}
+  (Session info: headless chrome=91.0.4472.124)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SIDDHANTPANDA', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\SIDDHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55036}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: af7dc17883ffaa61ed7fbae93fced630
+*** Element info: {Using=xpath, value=//a[contains(text(),'Offers')]}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy9.sendKeys(Unknown Source)
+at pages.offerPage.clickOfferButton(offerPage.java:26)
+at tests.offerTest.offers(offerTest.java:14)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- offers -->
-        <test-method status="PASS" signature="attachScreenShot(org.testng.ITestResult)[pri:0, instance:tests.offerTest@5bda8e08]" name="attachScreenShot" is-config="true" duration-ms="0" started-at="2021-07-02T10:25:26Z" finished-at="2021-07-02T10:25:26Z">
+        <test-method status="PASS" signature="attachScreenShot(org.testng.ITestResult)[pri:0, instance:tests.offerTest@3b0090a4]" name="attachScreenShot" is-config="true" duration-ms="180" started-at="2021-07-02T17:59:46Z" finished-at="2021-07-02T17:59:46Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=offers status=SUCCESS method=offerTest.offers()[pri:0, instance:tests.offerTest@5bda8e08] output={null}]]]>
+                <![CDATA[[TestResult name=offers status=FAILURE method=offerTest.offers()[pri:0, instance:tests.offerTest@3b0090a4] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- attachScreenShot -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.offerTest@5bda8e08]" name="closeBrowser" is-config="true" duration-ms="760" started-at="2021-07-02T10:25:26Z" finished-at="2021-07-02T10:25:27Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.offerTest@3b0090a4]" name="closeBrowser" is-config="true" duration-ms="756" started-at="2021-07-02T17:59:46Z" finished-at="2021-07-02T17:59:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- tests.offerTest -->
+      <class name="tests.bookingShowTicketTest">
+        <test-method status="PASS" signature="intializeWebdriver()[pri:0, instance:tests.bookingShowTicketTest@5bda8e08]" name="intializeWebdriver" is-config="true" duration-ms="1348" started-at="2021-07-02T17:58:10Z" finished-at="2021-07-02T17:58:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- intializeWebdriver -->
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:tests.bookingShowTicketTest@5bda8e08]" name="openBrowser" is-config="true" duration-ms="468" started-at="2021-07-02T17:58:11Z" finished-at="2021-07-02T17:58:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="FAIL" signature="ShowTicket()[pri:0, instance:tests.bookingShowTicketTest@5bda8e08]" name="ShowTicket" duration-ms="10049" started-at="2021-07-02T17:58:12Z" finished-at="2021-07-02T17:58:22Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Manage Booking')]"}
+  (Session info: headless chrome=91.0.4472.124)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SIDDHANTPANDA', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\SIDDHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59170}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 28c56780bf1a4801d9c9b396d473db16
+*** Element info: {Using=xpath, value=//div[contains(text(),'Manage Booking')]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Manage Booking')]"}
+  (Session info: headless chrome=91.0.4472.124)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SIDDHANTPANDA', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\SIDDHA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59170}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 28c56780bf1a4801d9c9b396d473db16
+*** Element info: {Using=xpath, value=//div[contains(text(),'Manage Booking')]}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy9.click(Unknown Source)
+at pages.bookingManagingPage.showTicket(bookingManagingPage.java:45)
+at tests.bookingShowTicketTest.ShowTicket(bookingShowTicketTest.java:27)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ShowTicket -->
+        <test-method status="PASS" signature="attachScreenShot(org.testng.ITestResult)[pri:0, instance:tests.bookingShowTicketTest@5bda8e08]" name="attachScreenShot" is-config="true" duration-ms="137" started-at="2021-07-02T17:58:22Z" finished-at="2021-07-02T17:58:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ShowTicket status=FAILURE method=bookingShowTicketTest.ShowTicket()[pri:0, instance:tests.bookingShowTicketTest@5bda8e08] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- attachScreenShot -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.bookingShowTicketTest@5bda8e08]" name="closeBrowser" is-config="true" duration-ms="643" started-at="2021-07-02T17:58:22Z" finished-at="2021-07-02T17:58:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- tests.bookingShowTicketTest -->
       <class name="tests.aboutusTest">
-        <test-method status="PASS" signature="setExtent()[pri:0, instance:tests.aboutusTest@6743e411]" name="setExtent" is-config="true" duration-ms="84" started-at="2021-07-02T10:21:59Z" finished-at="2021-07-02T10:21:59Z">
+        <test-method status="PASS" signature="setExtent()[pri:0, instance:tests.aboutusTest@f5958c9]" name="setExtent" is-config="true" duration-ms="200" started-at="2021-07-02T17:57:34Z" finished-at="2021-07-02T17:57:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setExtent -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.aboutusTest@6743e411]" name="endReport" is-config="true" duration-ms="237" started-at="2021-07-02T10:27:05Z" finished-at="2021-07-02T10:27:05Z">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:tests.aboutusTest@f5958c9]" name="endReport" is-config="true" duration-ms="543" started-at="2021-07-02T18:01:57Z" finished-at="2021-07-02T18:01:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
