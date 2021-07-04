@@ -6,31 +6,28 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import pages.contactPage;
-import util.commonUtil;
+import util.Execution;
 
 public class contactTest extends BaseTest {
-	private String sheetName = "RedbusFunctionality";
+	private String sheetName = "Home Page";  
 	@Test	
 	public void ContactRedBus() throws Throwable {
 		extentTest = extent.startTest("Valid SearchBus scenario test");
 
-		//String testcase = "ContactRedBus";
-
-		// Fetching all test data from excel file
-		//HashMap<String, String> data = new HashMap<String, String>();
-		//data = reader.getRowTestData(sheetName, testcase);
-		//String executionRequired = data.get("Execution Required").toLowerCase();
-		
+		String testcase = "Contact Page"; 
+		HashMap<String, String> data = new HashMap<String, String>();
+		data = reader.getRowTestData(sheetName, testcase);
+		String executionRequired = data.get("Execution Required").toLowerCase();
 		contactPage contactus = new contactPage(driver);
-		//commonUtil.toCheckExecutionRequired(executionRequired);
-		contactus.contactUsButton();
-		contactus.ClickForSupport();
+		Execution.toCheckExecutionRequired(executionRequired);
+		contactus.contactusButton();
+		contactus.clickSupport();
 		contactus.close();
 		
 		Assert.assertEquals("red:Care", driver.getTitle());
 		logger.info("SearchBus Test Case Passed");
 
-		Thread.sleep(9000);
+		Thread.sleep(1000);
 
 	}
 

@@ -17,7 +17,7 @@ public class offerPage {
 	}
 
 
-	//----------------------Check offers link locators & methods--------------------
+	
 	@FindBy(how = How.XPATH, using = "//a[contains(text(),'Offers')]")
 	public WebElement clickoffer;
 
@@ -29,5 +29,5 @@ public class offerPage {
 		Thread.sleep(3000);
 
 	}
-	//---------------------------------------------------------------------------	
+
 }

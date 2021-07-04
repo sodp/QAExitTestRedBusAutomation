@@ -22,7 +22,7 @@ public class helpPage {
 	@FindBy(how = How.XPATH, using = "//body/div[2]/div[1]/div[2]/div[1]/div[1]/div[2]/i[1]")
 	public WebElement cross;
 
-	public void naviHelpSection() {
+	public void HelpSection() {
 		helpbutton.click();
 	}
 

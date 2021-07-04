@@ -11,7 +11,7 @@ import org.openqa.selenium.WebDriver;
 public class ScreenShots {
 
 	public static String takeScreenShot(WebDriver driver, String testCaseName) {
-		String screenshotFileName = ".\\Reports\\" + testCaseName + "TestFailed.png";
+		String screenshotFileName = "\\Reports\\" + testCaseName + "TestFailed.png";
 
 		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		try {

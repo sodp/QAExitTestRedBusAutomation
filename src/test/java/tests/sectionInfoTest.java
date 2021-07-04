@@ -6,22 +6,21 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import pages.sectionInfoPage;
-import util.commonUtil;
+import util.Execution;
 
 public class sectionInfoTest extends BaseTest {
-	private String sheetName = "InfoSection";
+	private String sheetName = "Section Info"; 
 
 	@Test
 	public void termAndCondition() throws Throwable {
 		extentTest = extent.startTest("Navigate to term And Condition page scenario test");
 		sectionInfoPage info = new sectionInfoPage(driver);
-		String testcase = "termAndCondition";
-
+		String testcase = "Terms and Condition Page";
 		HashMap<String, String> data = new HashMap<String, String>();
 		data = reader.getRowTestData(sheetName, testcase);
 		String executionRequired = data.get("Execution Required").toLowerCase();
 
-		commonUtil.toCheckExecutionRequired(executionRequired);
+		Execution.toCheckExecutionRequired(executionRequired);
 
 		info.naviToTC();
 
@@ -35,19 +34,19 @@ public class sectionInfoTest extends BaseTest {
 	public void privacyPolicysection() throws Throwable {
 		extentTest = extent.startTest("Navigate to Privacy Policy page  scenario test");
 		sectionInfoPage info = new sectionInfoPage(driver);
-		String testcase = "privacyPolicysection";
+		String testcase = "Privacy Policy Page";
 
 		HashMap<String, String> data = new HashMap<String, String>();
 		data = reader.getRowTestData(sheetName, testcase);
 		String executionRequired = data.get("Execution Required").toLowerCase();
 
-		commonUtil.toCheckExecutionRequired(executionRequired);
+		Execution.toCheckExecutionRequired(executionRequired);
 
 		info.navitoprivacypolicy();
 
 		logger.info("Info privacyPolicy  Test Case Passed");
-		//Assert.assertEquals("redBus Bus Hire", driver.getTitle());
-		// Assert.assertEquals("https://www.redbus.in/info/privacypolicy", driver.getTitle());
+		
+		Assert.assertEquals("", driver.getTitle());
 
 		Thread.sleep(2000);
 	}
@@ -56,13 +55,13 @@ public class sectionInfoTest extends BaseTest {
 	public void faqsection() throws Throwable {
 		extentTest = extent.startTest("Navigate to FAQ Page  scenario test");
 		sectionInfoPage info = new sectionInfoPage(driver);
-		String testcase = "faqsection";
+		String testcase = "FAQ Page"; 
 
 		HashMap<String, String> data = new HashMap<String, String>();
 		data = reader.getRowTestData(sheetName, testcase);
 		String executionRequired = data.get("Execution Required").toLowerCase();
 
-		commonUtil.toCheckExecutionRequired(executionRequired);
+		Execution.toCheckExecutionRequired(executionRequired);
 
 		info.navitofaq();
 
@@ -76,13 +75,13 @@ public class sectionInfoTest extends BaseTest {
 	public void blogSection() throws Throwable {
 		extentTest = extent.startTest("Navigate to Blog Section  scenario test");
 		sectionInfoPage info = new sectionInfoPage(driver);
-		String testcase = "blogSection";
+		String testcase = "Blog Page";
 
 		HashMap<String, String> data = new HashMap<String, String>();
 		data = reader.getRowTestData(sheetName, testcase);
 		String executionRequired = data.get("Execution Required").toLowerCase();
 
-		commonUtil.toCheckExecutionRequired(executionRequired);
+		Execution.toCheckExecutionRequired(executionRequired);
 
 		info.navitoblog();
 
@@ -96,13 +95,13 @@ public class sectionInfoTest extends BaseTest {
 	public void insuranceSection() throws Throwable {
 		extentTest = extent.startTest("Navigate to Insurance Section  scenario test");
 		sectionInfoPage info = new sectionInfoPage(driver);
-		String testcase = "insuranceSection";
+		String testcase = "Insurance Page";
 
 		HashMap<String, String> data = new HashMap<String, String>();
 		data = reader.getRowTestData(sheetName, testcase);
 		String executionRequired = data.get("Execution Required").toLowerCase();
 
-		commonUtil.toCheckExecutionRequired(executionRequired);
+		Execution.toCheckExecutionRequired(executionRequired);
 
 		info.navitoinsurance();
 
@@ -116,13 +115,13 @@ public class sectionInfoTest extends BaseTest {
 	public void userAgreementSection() throws Throwable {
 		extentTest = extent.startTest("Navigate to User Agreement Section  scenario test");
 		sectionInfoPage info = new sectionInfoPage(driver);
-		String testcase = "useragreementSection";
+		String testcase = "User Agreement Page"; 
 
 		HashMap<String, String> data = new HashMap<String, String>();
 		data = reader.getRowTestData(sheetName, testcase);
 		String executionRequired = data.get("Execution Required").toLowerCase();
 
-		commonUtil.toCheckExecutionRequired(executionRequired);
+		Execution.toCheckExecutionRequired(executionRequired);
 
 		info.navitouseragreement();
 
@@ -136,20 +135,19 @@ public class sectionInfoTest extends BaseTest {
 	public void agentRegistration() throws Throwable {
 		extentTest = extent.startTest("Navigate to Agent Registration  scenario test");
 		sectionInfoPage info = new sectionInfoPage(driver);
-		String testcase = "agentRegistration";
+		String testcase = "Agent Registration Page"; 
 
 		HashMap<String, String> data = new HashMap<String, String>();
 		data = reader.getRowTestData(sheetName, testcase);
 		String executionRequired = data.get("Execution Required").toLowerCase();
 
-		commonUtil.toCheckExecutionRequired(executionRequired);
+		Execution.toCheckExecutionRequired(executionRequired);
 
 		info.navitoagentRegistration();
 
 		logger.info("Info agentRegistration  Test Case Passed");
-
 		Assert.assertEquals("Seat Seller", driver.getTitle());
-		// Assert.assertEquals("User Agreement -redBus.in", driver.getTitle());
+		
 
 		Thread.sleep(2000);
 	}

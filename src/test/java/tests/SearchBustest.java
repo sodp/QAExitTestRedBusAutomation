@@ -3,26 +3,26 @@ package tests;
 import java.util.HashMap;
 
 import org.testng.annotations.Test;
-import util.commonUtil;
+import util.Execution;
 import pages.SearchBus;
 
 public class SearchBustest extends BaseTest {
-	private String sheetName = "SearchBusTest";
+	private String sheetName = "Search Bus";
 
 	@Test
-	public void searchBus() throws InterruptedException {
+	public void searchBusValid() throws InterruptedException {
 
-		String testName = "whenUserEntersValidFromAndValidToAndValidDate";
-		// Fetching all test data from excel file
+		String testName = "Valid Search Bus";
+	
 		HashMap<String, String> testData = new HashMap<String, String>();
 		testData = reader.getRowTestData(sheetName, testName);
-		String executionRequired = testData.get("Execution Required").toLowerCase();
 		String fromLocation = testData.get("From");
 		String toLocation = testData.get("To");
 		String dateVal = testData.get("Date");
 		// if execution required field is no
-		commonUtil.toCheckExecutionRequired(executionRequired);
-		extentTest = extent.startTest("Valid serarch bus test");
+		String executionRequired = testData.get("Execution Required").toLowerCase();
+		Execution.toCheckExecutionRequired(executionRequired);
+		extentTest = extent.startTest("Valid search bus test");
 		SearchBus user = new SearchBus(driver);
 		user.clickBusTicket();
 		user.UserSource(fromLocation);
@@ -31,6 +31,7 @@ public class SearchBustest extends BaseTest {
 		Thread.sleep(5000);
 		user.clickDate(dateVal);
 		user.SearchButton();
+		logger.info("Valid Search Bus Test Case Passed");
 	}
-
+	
 }

@@ -18,7 +18,7 @@ public class contactPage {
 	}
 
 	@FindBy(how = How.XPATH, using = "//a[contains(text(),'Contact Us')]")
-	public WebElement contactUsnav;
+	public WebElement contactus;
 
 	@FindBy(how = How.XPATH, using = "//a[contains(text(),'Click Here')]")
 	public WebElement clickhere;
@@ -26,13 +26,13 @@ public class contactPage {
 	@FindBy(how = How.XPATH, using = "//i[@class='icon-close']")
 	public WebElement closePopUp;
 
-	public void contactUsButton() throws Throwable {
-		contactUsnav.sendKeys(Keys.ENTER);
+	public void contactusButton() throws Throwable {
+		contactus.sendKeys(Keys.ENTER);
 		Thread.sleep(3000);
 
 	}
 
-	public void ClickForSupport() throws Throwable {
+	public void clickSupport() throws Throwable {
 		ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
 		driver.switchTo().window(tabs.get(1));
 		clickhere.click();

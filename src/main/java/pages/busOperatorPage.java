@@ -20,13 +20,10 @@ public class busOperatorPage {
 	
 
 	@FindBy(how = How.XPATH, using = "//a[contains(text(),'All Operators >')]")
-	public WebElement operators;
-
-//	@FindBy(how = How.XPATH, using = "//a[contains(text(),'redbus')]")
-//	public WebElement home;
-
-	public void all_operators() {
-		operators.sendKeys(Keys.ENTER);
+	public WebElement busoperators;
+	
+	public void AllOperators() {
+		busoperators.sendKeys(Keys.ENTER);
 		ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
 		driver.switchTo().window(tabs.get(1));
 	}

@@ -1,50 +1,50 @@
 package tests;
+
 import java.util.HashMap;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import pages.modifySearchBusPage;
-import util.commonUtil;
-
-
+import util.Execution;
 
 public class modifySearchBusTest extends BaseTest {
-	private String sheetName = "SearchBusTest";
+	private String sheetName = "Search Bus"; // Search Bus
 
 	@Test
 	public void careers() throws Throwable {
-		extentTest = extent.startTest("Valid ModifySearchBusLocation functionality scenario test");
 
-		String testcase = "ValidsearchBus";
+		extentTest = extent.startTest("Valid Modify Search Bus Location Functionality Test");
+		String testName = "Valid Modify Search Bus";
 
-		modifySearchBusPage modify_location = new modifySearchBusPage(driver);
+		HashMap<String, String> testData = new HashMap<String, String>();
+		testData = reader.getRowTestData(sheetName, testName);
+		String fromLocation = testData.get("From");
+		String toLocation = testData.get("To");
+		String dateVal = testData.get("Date");
+		// if execution required field is no
+		String executionRequired = testData.get("Execution Required").toLowerCase();
+		Execution.toCheckExecutionRequired(executionRequired);
 
-		HashMap<String, String> data = new HashMap<String, String>();
-		data = reader.getRowTestData(sheetName, testcase);
-		String executionRequired = data.get("Execution Required").toLowerCase();
-		String source_Location = data.get("From");
-		String dest_Location = data.get("To");
-		
+		modifySearchBusPage modifylocation = new modifySearchBusPage(driver);
 
+		Execution.toCheckExecutionRequired(executionRequired);
 
-		commonUtil.toCheckExecutionRequired(executionRequired);
-
-		modify_location.selectsource(source_Location);
+		modifylocation.selectsource(fromLocation);
 		Thread.sleep(5000);
-		modify_location.selectdestination(dest_Location);
+		modifylocation.selectdestination(toLocation);
 		Thread.sleep(5000);
-		modify_location.dateSelectButton();
+		modifylocation.dateSelectButton();
 		Thread.sleep(5000);
-		modify_location.clicksearchbutton();
+		modifylocation.clicksearchbutton();
 		Thread.sleep(5000);
-		modify_location.modifylocation(dest_Location, source_Location);
+		modifylocation.modifylocation(toLocation, fromLocation);
 		Thread.sleep(5000);
-		modify_location.modifySearch();
+		modifylocation.modifySearch();
 		Thread.sleep(5000);
 
 		String expected = driver.getTitle();
-		logger.info("ModifySearchBusLocation functionality Test Case Passed");
+		logger.info(" Valid Modify Search BusLocation functionality Test Case Passed");
 		Assert.assertEquals(expected, driver.getTitle());
 		Thread.sleep(5000);
 	}

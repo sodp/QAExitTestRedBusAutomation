@@ -3,17 +3,17 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.bookingShowTicketTest">
+      <class name="tests.busHireOutstationTest">
         <methods>
           <include name="closeBrowser"/>
-          <include name="ShowTicket"/>
           <include name="endReport"/>
           <include name="attachScreenShot"/>
+          <include name="all_bus_operators"/>
           <include name="openBrowser"/>
           <include name="intializeWebdriver"/>
           <include name="setExtent"/>
         </methods>
-      </class> <!-- tests.bookingShowTicketTest -->
+      </class> <!-- tests.busHireOutstationTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,21 +1,32 @@
 package tests;
+
+import java.util.HashMap;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import pages.careerPage;
+import util.Execution;
 
-public class careerTest extends BaseTest{
-
+public class careerTest extends BaseTest {
+	private String sheetName = "Home Page"; 
 	@Test
 	public void careers() throws Throwable {
 		extentTest = extent.startTest("Valid careers page scenario test");
-		careerPage buildcareer = new careerPage(driver);
+		String testcase = "Career Page";  
+		HashMap<String, String> data = new HashMap<String, String>();
+		data = reader.getRowTestData(sheetName, testcase);
+		String executionRequired = data.get("Execution Required").toLowerCase();
+		
+		careerPage career = new careerPage(driver);
+		Execution.toCheckExecutionRequired(executionRequired);
+		career.careeerButton();
+		Thread.sleep(1000);
+		career.goHome();
+		Thread.sleep(1000);
 
-		buildcareer.careeerButton();
-		buildcareer.goHome();
-
-		logger.info("CareersPage Test Case Passed");
 		Assert.assertEquals("Book Bus Travels, AC Volvo Bus, rPool & Bus Hire - redBus India", driver.getTitle());
-		Thread.sleep(5000);
+		logger.info("CareersPage Test Case Passed");
+		Thread.sleep(1000);
 	}
 }

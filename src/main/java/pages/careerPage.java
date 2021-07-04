@@ -17,8 +17,7 @@ public class careerPage {
 		this.driver = driver;
 	}
 
-	// ------------------------Careers link locators & methods------------------------
-
+	
 	@FindBy(how = How.XPATH, using = "//a[contains(text(),'Careers')]")
 	public WebElement careers;
 
@@ -35,6 +34,5 @@ public class careerPage {
 		home.click();
 		driver.switchTo().window(tabs.get(0));
 	}
-	// ---------------------------------------------------------------------------
-
+	
 }

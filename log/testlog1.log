@@ -147,3 +147,175 @@
 2021-07-02 23:24:15,139 [main] INFO tests.BaseTest - Info privacyPolicy  Test Case Passed
 2021-07-02 23:24:48,936 [main] INFO tests.BaseTest - TermAndCondition Test Case Passed
 2021-07-02 23:25:03,094 [main] INFO tests.BaseTest - Info user Agreement Section   Test Case Passed
+2021-07-03 00:05:57,988 [main] INFO tests.BaseTest - All Operators Test Case Passed
+2021-07-03 00:06:30,991 [main] INFO tests.BaseTest - CareersPage Test Case Passed
+2021-07-03 00:07:14,888 [main] INFO tests.BaseTest - SearchBus Test Case Passed
+2021-07-03 00:08:35,999 [main] INFO tests.BaseTest - ModifySearchBusLocation functionality Test Case Passed
+2021-07-03 00:08:57,879 [main] INFO tests.BaseTest - offers Test Case Passed
+2021-07-03 00:10:11,527 [main] INFO tests.BaseTest - rPool Test Case Passed
+2021-07-03 00:10:32,863 [main] INFO tests.BaseTest - Info agentRegistration  Test Case Passed
+2021-07-03 00:11:15,161 [main] INFO tests.BaseTest - Info Blog Section  Test Case Passed
+2021-07-03 00:11:41,394 [main] INFO tests.BaseTest - Info FAQ  Test Case Passed
+2021-07-03 00:12:04,100 [main] INFO tests.BaseTest - Info Insurance Section  Test Case Passed
+2021-07-03 00:12:21,419 [main] INFO tests.BaseTest - Info privacyPolicy  Test Case Passed
+2021-07-03 00:12:38,930 [main] INFO tests.BaseTest - TermAndCondition Test Case Passed
+2021-07-03 00:13:02,951 [main] INFO tests.BaseTest - Info user Agreement Section   Test Case Passed
+2021-07-03 02:42:31,905 [main] INFO tests.BaseTest - Cancel ticket functionality Test Case Passed
+2021-07-03 02:42:41,565 [main] INFO tests.BaseTest - TravelDate functionality Test Case Passed
+2021-07-03 02:42:51,190 [main] INFO tests.BaseTest - ShowTicket functionality Test Case Passed
+2021-07-03 02:43:22,433 [main] INFO tests.BaseTest - SearchBus Test Case Passed
+2021-07-03 02:44:14,263 [main] INFO tests.BaseTest - ModifySearchBusLocation functionality Test Case Passed
+2021-07-03 02:44:38,014 [main] INFO tests.BaseTest - PartnerWebsitesPage functionality Test Case Passed
+2021-07-03 02:44:45,767 [main] INFO tests.BaseTest - rPool Test Case Passed
+2021-07-03 02:45:34,769 [main] INFO tests.BaseTest - TermAndCondition Test Case Passed
+2021-07-03 14:28:11,295 [main] INFO tests.BaseTest - Global website country  functionality Test Case Passed
+2021-07-03 14:28:29,390 [main] INFO tests.BaseTest - Global website country  functionality Test Case Passed
+2021-07-03 14:29:08,718 [main] INFO tests.BaseTest - Global website country  functionality Test Case Passed
+2021-07-03 14:29:57,326 [main] INFO tests.BaseTest - Global website country  functionality Test Case Passed
+2021-07-03 14:30:14,343 [main] INFO tests.BaseTest - Global website country  functionality Test Case Passed
+2021-07-03 14:39:21,309 [main] INFO tests.BaseTest - All Operators Test Case Passed
+2021-07-03 14:39:44,267 [main] INFO tests.BaseTest - CareersPage Test Case Passed
+2021-07-03 14:40:21,330 [main] INFO tests.BaseTest - SearchBus Test Case Passed
+2021-07-03 14:40:36,270 [main] INFO tests.BaseTest - Global website country  functionality Test Case Passed
+2021-07-03 14:40:52,867 [main] INFO tests.BaseTest - Global website country  functionality Test Case Passed
+2021-07-03 14:41:09,779 [main] INFO tests.BaseTest - Global website country  functionality Test Case Passed
+2021-07-03 14:41:25,791 [main] INFO tests.BaseTest - Global website country  functionality Test Case Passed
+2021-07-03 14:41:46,310 [main] INFO tests.BaseTest - Global website country  functionality Test Case Passed
+2021-07-03 14:42:50,729 [main] INFO tests.BaseTest - ModifySearchBusLocation functionality Test Case Passed
+2021-07-03 14:43:04,442 [main] INFO tests.BaseTest - offers Test Case Passed
+2021-07-03 14:43:17,025 [main] INFO tests.BaseTest - PartnerWebsitesPage functionality Test Case Passed
+2021-07-03 14:43:50,836 [main] INFO tests.BaseTest - rPool Test Case Passed
+2021-07-03 14:44:06,165 [main] INFO tests.BaseTest - Info agentRegistration  Test Case Passed
+2021-07-03 14:44:33,066 [main] INFO tests.BaseTest - Info Blog Section  Test Case Passed
+2021-07-03 14:44:41,771 [main] INFO tests.BaseTest - Info FAQ  Test Case Passed
+2021-07-03 14:44:51,401 [main] INFO tests.BaseTest - Info Insurance Section  Test Case Passed
+2021-07-03 14:45:01,385 [main] INFO tests.BaseTest - Info privacyPolicy  Test Case Passed
+2021-07-03 14:45:11,043 [main] INFO tests.BaseTest - TermAndCondition Test Case Passed
+2021-07-03 14:45:21,543 [main] INFO tests.BaseTest - Info user Agreement Section   Test Case Passed
+2021-07-03 14:59:13,856 [main] INFO tests.BaseTest - Cancel ticket functionality Test Case Passed
+2021-07-03 14:59:36,176 [main] INFO tests.BaseTest - TravelDate functionality Test Case Passed
+2021-07-03 15:01:41,638 [main] INFO tests.BaseTest - Cancel ticket functionality Test Case Passed
+2021-07-03 15:01:59,431 [main] INFO tests.BaseTest - TravelDate functionality Test Case Passed
+2021-07-03 15:02:14,663 [main] INFO tests.BaseTest - ShowTicket functionality Test Case Passed
+2021-07-03 15:03:26,075 [main] INFO tests.BaseTest - SearchBus Test Case Passed
+2021-07-03 15:05:32,328 [main] INFO tests.BaseTest - Cancel ticket functionality Test Case Passed
+2021-07-03 15:05:50,844 [main] INFO tests.BaseTest - TravelDate functionality Test Case Passed
+2021-07-03 15:06:12,754 [main] INFO tests.BaseTest - ShowTicket functionality Test Case Passed
+2021-07-03 15:07:25,509 [main] INFO tests.BaseTest - SearchBus Test Case Passed
+2021-07-03 15:09:38,638 [main] INFO tests.BaseTest - HelpButton functionality Test Case Passed
+2021-07-03 15:10:33,319 [main] INFO tests.BaseTest - ModifySearchBusLocation functionality Test Case Passed
+2021-07-03 15:11:38,643 [main] INFO tests.BaseTest - rPool Test Case Passed
+2021-07-03 17:31:14,285 [main] INFO tests.BaseTest - All Operators Test Case Passed
+2021-07-03 18:24:22,800 [main] INFO tests.BaseTest - All Operators Test Case Passed
+2021-07-03 18:45:56,157 [main] INFO tests.BaseTest - Cancel ticket functionality Test Case Passed
+2021-07-03 18:46:33,410 [main] INFO tests.BaseTest - TravelDate functionality Test Case Passed
+2021-07-03 18:46:47,241 [main] INFO tests.BaseTest - ShowTicket functionality Test Case Passed
+2021-07-03 18:47:21,977 [main] INFO tests.BaseTest - All Operators Test Case Passed
+2021-07-03 18:48:18,432 [main] INFO tests.BaseTest - All Operators Test Case Passed
+2021-07-03 18:48:55,867 [main] INFO tests.BaseTest - CareersPage Test Case Passed
+2021-07-03 18:49:43,434 [main] INFO tests.BaseTest - SearchBus Test Case Passed
+2021-07-03 18:50:08,085 [main] INFO tests.BaseTest - Global website country  functionality Test Case Passed
+2021-07-03 18:50:45,069 [main] INFO tests.BaseTest - Global website country  functionality Test Case Passed
+2021-07-03 18:51:43,684 [main] INFO tests.BaseTest - Global website country  functionality Test Case Passed
+2021-07-03 21:06:43,247 [main] INFO tests.BaseTest - All Operators Test Case Passed
+2021-07-03 21:29:04,506 [main] INFO tests.BaseTest - TravelDate functionality Test Case Passed
+2021-07-03 21:30:47,969 [main] INFO tests.BaseTest - TravelDate functionality Test Case Passed
+2021-07-03 21:31:33,394 [main] INFO tests.BaseTest - TravelDate functionality Test Case Passed
+2021-07-03 22:00:25,309 [main] INFO tests.BaseTest - All Operators Test Case Passed
+2021-07-03 22:00:45,980 [main] INFO tests.BaseTest - All Operators Test Case Passed
+2021-07-03 22:04:54,781 [main] INFO tests.BaseTest - All Operators Test Case Passed
+2021-07-03 23:55:05,672 [main] INFO tests.BaseTest - All Operators Test Case Passed
+2021-07-04 00:58:44,205 [main] INFO tests.BaseTest - HelpButton functionality Test Case Passed
+2021-07-04 00:59:36,391 [main] INFO tests.BaseTest - Cancel ticket functionality Test Case Passed
+2021-07-04 10:07:40,481 [main] INFO tests.BaseTest - Cancel Ticket Navigation Test Case Passed
+2021-07-04 10:07:40,486 [main] INFO tests.BaseTest - Cancel Ticket Navigation Test Case Passed
+2021-07-04 10:16:46,782 [main] INFO tests.BaseTest - Cancel Ticket Navigation Test Case Passed
+2021-07-04 10:16:46,793 [main] INFO tests.BaseTest - Cancel Ticket Navigation Test Case Passed
+2021-07-04 10:22:01,896 [main] INFO tests.BaseTest - TravelDate functionality Test Case Passed
+2021-07-04 10:22:51,160 [main] INFO tests.BaseTest - ShowTicket functionality Test Case Passed
+2021-07-04 10:32:26,887 [main] INFO tests.BaseTest - All Bus Operators Navigation Test
+2021-07-04 10:48:36,913 [main] INFO tests.BaseTest - PartnerWebsitesPage functionality Test Case Passed
+2021-07-04 10:49:49,144 [main] INFO tests.BaseTest - PartnerWebsitesPage functionality Test Case Passed
+2021-07-04 10:50:50,540 [main] INFO tests.BaseTest - PartnerWebsitesPage functionality Test Case Passed
+2021-07-04 10:51:07,030 [main] INFO tests.BaseTest - PartnerWebsitesPage functionality Test Case Passed
+2021-07-04 10:55:04,966 [main] INFO tests.BaseTest - CareersPage Test Case Passed
+2021-07-04 10:59:49,908 [main] INFO tests.BaseTest - HelpButton functionality Test Case Passed
+2021-07-04 11:12:33,069 [main] INFO tests.BaseTest - offers Test Case Passed
+2021-07-04 11:16:02,942 [main] INFO tests.BaseTest - SearchBus Test Case Passed
+2021-07-04 11:17:59,208 [main] INFO tests.BaseTest - SearchBus Test Case Passed
+2021-07-04 11:26:22,512 [main] INFO tests.BaseTest - rPool Test Case Passed
+2021-07-04 11:43:53,638 [main] INFO tests.BaseTest - rpool Andriod Test Case Passed
+2021-07-04 11:54:05,125 [main] INFO tests.BaseTest - rpool Andriod Test Case Passed
+2021-07-04 11:54:47,936 [main] INFO tests.BaseTest - rpool ios Test Case Passed
+2021-07-04 12:13:53,086 [main] INFO tests.BaseTest - Signin Test Case Passed
+2021-07-04 12:18:49,946 [main] INFO tests.BaseTest - Signin Test Case Passed
+2021-07-04 12:29:04,010 [main] INFO tests.BaseTest - Signin Test Case Passed
+2021-07-04 12:29:18,847 [main] INFO tests.BaseTest - Signin Test Case Passed
+2021-07-04 13:17:58,200 [main] INFO tests.BaseTest - All Operators Test Case Passed
+2021-07-04 14:13:38,031 [main] INFO tests.BaseTest - Valid Signin Test Case Passed
+2021-07-04 14:28:57,213 [main] INFO tests.BaseTest - Valid Signin Test Case Passed
+2021-07-04 15:32:17,201 [main] INFO tests.BaseTest - Valid Signin Test Case Passed
+2021-07-04 15:33:52,728 [main] INFO tests.BaseTest - Valid Signin Test Case Passed
+2021-07-04 15:34:57,567 [main] INFO tests.BaseTest - Valid Signin Test Case Passed
+2021-07-04 15:38:55,497 [main] INFO tests.BaseTest - Valid Signin Test Case Passed
+2021-07-04 15:42:10,975 [main] INFO tests.BaseTest - Valid Signin Test Case Passed
+2021-07-04 16:55:31,322 [main] INFO tests.BaseTest - Valid Signin Test Case Passed
+2021-07-04 16:57:14,346 [main] INFO tests.BaseTest - Valid Signin Test Case Passed
+2021-07-04 16:58:35,971 [main] INFO tests.BaseTest - Invalid Signin Test Case Passed
+2021-07-04 16:58:47,984 [main] INFO tests.BaseTest - Valid Signin Test Case Passed
+2021-07-04 17:11:11,000 [main] INFO tests.BaseTest - Valid Signin Test Case Passed
+2021-07-04 17:13:29,863 [main] INFO tests.BaseTest - Valid Signin Test Case Passed
+2021-07-04 17:16:13,994 [main] INFO tests.BaseTest - Valid Signin Test Case Passed
+2021-07-04 17:31:36,951 [main] INFO tests.BaseTest - Invalid Signin Test Case Passed
+2021-07-04 17:32:08,388 [main] INFO tests.BaseTest - Valid Signin Test Case Passed
+2021-07-04 17:56:07,714 [main] INFO tests.BaseTest - Global website country  functionality Test Case Passed
+2021-07-04 17:56:28,535 [main] INFO tests.BaseTest - Global website country  functionality Test Case Passed
+2021-07-04 17:56:56,749 [main] INFO tests.BaseTest - Global website country  functionality Test Case Passed
+2021-07-04 17:57:21,546 [main] INFO tests.BaseTest - Global website country  functionality Test Case Passed
+2021-07-04 17:58:13,266 [main] INFO tests.BaseTest - Global website country  functionality Test Case Passed
+2021-07-04 18:03:47,723 [main] INFO tests.BaseTest - Info agentRegistration  Test Case Passed
+2021-07-04 18:04:49,453 [main] INFO tests.BaseTest - Info Blog Section  Test Case Passed
+2021-07-04 18:05:14,725 [main] INFO tests.BaseTest - Info FAQ  Test Case Passed
+2021-07-04 18:05:26,162 [main] INFO tests.BaseTest - Info Insurance Section  Test Case Passed
+2021-07-04 18:06:04,802 [main] INFO tests.BaseTest - Info privacyPolicy  Test Case Passed
+2021-07-04 18:06:38,505 [main] INFO tests.BaseTest - TermAndCondition Test Case Passed
+2021-07-04 18:07:20,373 [main] INFO tests.BaseTest - Info user Agreement Section   Test Case Passed
+2021-07-04 18:36:10,347 [main] INFO tests.BaseTest - offers Test Case Passed
+2021-07-04 18:39:06,463 [main] INFO tests.BaseTest - Invalid Search Bus Test Case Passed
+2021-07-04 18:42:30,162 [main] INFO tests.BaseTest - Valid Search Bus Test Case Passed
+2021-07-04 18:52:54,611 [main] INFO tests.BaseTest -  Valid Modify Search BusLocation functionality Test Case Passed
+2021-07-04 19:11:06,720 [main] INFO tests.BaseTest - All Operators Test Case Passed
+2021-07-04 19:22:59,639 [main] INFO tests.BaseTest - All Operators Test Case Passed
+2021-07-04 20:02:14,377 [main] INFO tests.BaseTest - All Operators Test Case Passed
+2021-07-04 20:56:23,247 [main] INFO tests.BaseTest - All Operators Test Case Passed
+2021-07-04 21:37:11,254 [main] INFO tests.BaseTest - All Operators Test Case Passed
+2021-07-04 21:50:28,986 [main] INFO tests.BaseTest - All Operators Test Case Passed
+2021-07-04 21:54:08,407 [main] INFO tests.BaseTest - All Operators Test Case Passed
+2021-07-04 21:57:56,334 [main] INFO tests.BaseTest - All Operators Test Case Passed
+2021-07-04 22:03:34,018 [main] INFO tests.BaseTest - Cancel Ticket Navigation Test Case Passed
+2021-07-04 22:03:57,140 [main] INFO tests.BaseTest - TravelDate functionality Test Case Passed
+2021-07-04 22:04:21,373 [main] INFO tests.BaseTest - ShowTicket functionality Test Case Passed
+2021-07-04 22:04:50,789 [main] INFO tests.BaseTest - All Operators Test Case Passed
+2021-07-04 22:05:54,839 [main] INFO tests.BaseTest - All Bus Operators Navigation Test
+2021-07-04 22:06:02,615 [main] INFO tests.BaseTest - CareersPage Test Case Passed
+2021-07-04 22:06:39,148 [main] INFO tests.BaseTest - SearchBus Test Case Passed
+2021-07-04 22:06:45,785 [main] INFO tests.BaseTest - Global website country  Malaysia Test Case Passed
+2021-07-04 22:07:02,064 [main] INFO tests.BaseTest - Global website country Colombia Test Case Passed
+2021-07-04 22:07:36,952 [main] INFO tests.BaseTest - Global website country  Indonesia Test Case Passed
+2021-07-04 22:08:08,521 [main] INFO tests.BaseTest - Global website country Peru Test Case Passed
+2021-07-04 22:08:28,003 [main] INFO tests.BaseTest - Global website country  Singapore Test Case Passed
+2021-07-04 22:09:02,306 [main] INFO tests.BaseTest - HelpButton functionality Test Case Passed
+2021-07-04 22:10:20,798 [main] INFO tests.BaseTest -  Valid Modify Search BusLocation functionality Test Case Passed
+2021-07-04 22:10:40,139 [main] INFO tests.BaseTest - offers Test Case Passed
+2021-07-04 22:11:07,893 [main] INFO tests.BaseTest - PartnerWebsitesPage functionality Test Case Passed
+2021-07-04 22:11:28,599 [main] INFO tests.BaseTest - rpool Andriod Test Case Passed
+2021-07-04 22:12:03,827 [main] INFO tests.BaseTest - rpool ios Test Case Passed
+2021-07-04 22:12:10,523 [main] INFO tests.BaseTest - Info agentRegistration  Test Case Passed
+2021-07-04 22:12:46,538 [main] INFO tests.BaseTest - Info Blog Section  Test Case Passed
+2021-07-04 22:13:11,415 [main] INFO tests.BaseTest - Info FAQ  Test Case Passed
+2021-07-04 22:13:20,059 [main] INFO tests.BaseTest - Info Insurance Section  Test Case Passed
+2021-07-04 22:13:44,242 [main] INFO tests.BaseTest - Info privacyPolicy  Test Case Passed
+2021-07-04 22:14:12,614 [main] INFO tests.BaseTest - TermAndCondition Test Case Passed
+2021-07-04 22:14:41,611 [main] INFO tests.BaseTest - Info user Agreement Section   Test Case Passed
+2021-07-04 22:15:00,866 [main] INFO tests.BaseTest - Invalid Signin Test Case Passed
+2021-07-04 22:15:30,435 [main] INFO tests.BaseTest - Valid Signin Test Case Passed

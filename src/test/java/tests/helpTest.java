@@ -1,24 +1,29 @@
 package tests;
 
+import java.util.HashMap;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import pages.helpPage;
-
-
+import util.Execution;
 
 public class helpTest extends BaseTest {
+	private String sheetName = "Home Page"; 
 	@Test
 	public void careers() throws Throwable {
-		extentTest = extent.startTest("Valid HelpButton functionality scenario test");
+		extentTest = extent.startTest("Valid HelpButton Navigationtest");
+		String testcase = "Help Page"; 
+		HashMap<String, String> data = new HashMap<String, String>();
+		data = reader.getRowTestData(sheetName, testcase);
+		String executionRequired = data.get("Execution Required").toLowerCase();
 		helpPage helpsection = new helpPage(driver);
-
-		helpsection.naviHelpSection();
+		Execution.toCheckExecutionRequired(executionRequired);
+		helpsection.HelpSection();
 		helpsection.closePopup();
 
-		logger.info("HelpButton functionality Test Case Passed");
 		Assert.assertEquals("red:Care", driver.getTitle());
-		//Thread.sleep(5000);
+		logger.info("HelpButton functionality Test Case Passed");
 	}
 
 }

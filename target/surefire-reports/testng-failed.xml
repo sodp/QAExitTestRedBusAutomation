@@ -3,33 +3,10 @@
 <suite thread-count="1" verbose="0" name="Failed suite [Surefire suite]">
   <test thread-count="1" verbose="0" name="Surefire test(failed)">
     <classes>
-      <class name="tests.contactTest">
-        <methods>
-          <include name="closeBrowser"/>
-          <include name="endReport"/>
-          <include name="attachScreenShot"/>
-          <include name="ContactRedBus"/>
-          <include name="openBrowser"/>
-          <include name="intializeWebdriver"/>
-          <include name="setExtent"/>
-        </methods>
-      </class> <!-- tests.contactTest -->
-      <class name="tests.modifySearchBusTest">
-        <methods>
-          <include name="closeBrowser"/>
-          <include name="endReport"/>
-          <include name="careers"/>
-          <include name="attachScreenShot"/>
-          <include name="openBrowser"/>
-          <include name="intializeWebdriver"/>
-          <include name="setExtent"/>
-        </methods>
-      </class> <!-- tests.modifySearchBusTest -->
       <class name="tests.partnerWebsiteTest">
         <methods>
-          <include name="partnerWebsitesgoibibosite"/>
-          <include name="partnerWebsitesmakemytrip"/>
           <include name="closeBrowser"/>
+          <include name="partnergoibibosite"/>
           <include name="endReport"/>
           <include name="attachScreenShot"/>
           <include name="openBrowser"/>
@@ -37,111 +14,17 @@
           <include name="setExtent"/>
         </methods>
       </class> <!-- tests.partnerWebsiteTest -->
-      <class name="tests.bookingchangeTravelDateTest">
+      <class name="tests.busHireOutstationTest">
         <methods>
           <include name="closeBrowser"/>
           <include name="endReport"/>
           <include name="attachScreenShot"/>
-          <include name="TravelDate"/>
-          <include name="openBrowser"/>
-          <include name="intializeWebdriver"/>
-          <include name="setExtent"/>
-        </methods>
-      </class> <!-- tests.bookingchangeTravelDateTest -->
-      <class name="tests.bookingShowTicketTest">
-        <methods>
-          <include name="closeBrowser"/>
-          <include name="ShowTicket"/>
-          <include name="endReport"/>
-          <include name="attachScreenShot"/>
-          <include name="openBrowser"/>
-          <include name="intializeWebdriver"/>
-          <include name="setExtent"/>
-        </methods>
-      </class> <!-- tests.bookingShowTicketTest -->
-      <class name="tests.rpoolTest">
-        <methods>
-          <include name="closeBrowser"/>
-          <include name="rPoolfunctionality"/>
-          <include name="endReport"/>
-          <include name="attachScreenShot"/>
-          <include name="openBrowser"/>
-          <include name="intializeWebdriver"/>
-          <include name="setExtent"/>
-        </methods>
-      </class> <!-- tests.rpoolTest -->
-      <class name="tests.offerTest">
-        <methods>
-          <include name="closeBrowser"/>
-          <include name="endReport"/>
-          <include name="attachScreenShot"/>
-          <include name="openBrowser"/>
-          <include name="intializeWebdriver"/>
-          <include name="offers"/>
-          <include name="setExtent"/>
-        </methods>
-      </class> <!-- tests.offerTest -->
-      <class name="tests.careerTest">
-        <methods>
-          <include name="closeBrowser"/>
-          <include name="endReport"/>
-          <include name="attachScreenShot"/>
-          <include name="careers"/>
-          <include name="openBrowser"/>
-          <include name="intializeWebdriver"/>
-          <include name="setExtent"/>
-        </methods>
-      </class> <!-- tests.careerTest -->
-      <class name="tests.bookingCancelTest">
-        <methods>
-          <include name="closeBrowser"/>
-          <include name="careers"/>
-          <include name="endReport"/>
-          <include name="attachScreenShot"/>
-          <include name="openBrowser"/>
-          <include name="intializeWebdriver"/>
-          <include name="setExtent"/>
-        </methods>
-      </class> <!-- tests.bookingCancelTest -->
-      <class name="tests.busOperatorTest">
-        <methods>
           <include name="all_bus_operators"/>
-          <include name="closeBrowser"/>
-          <include name="endReport"/>
-          <include name="attachScreenShot"/>
           <include name="openBrowser"/>
           <include name="intializeWebdriver"/>
           <include name="setExtent"/>
         </methods>
-      </class> <!-- tests.busOperatorTest -->
-      <class name="tests.sectionInfoTest">
-        <methods>
-          <include name="insuranceSection"/>
-          <include name="endReport"/>
-          <include name="openBrowser"/>
-          <include name="faqsection"/>
-          <include name="userAgreementSection"/>
-          <include name="setExtent"/>
-          <include name="agentRegistration"/>
-          <include name="privacyPolicysection"/>
-          <include name="closeBrowser"/>
-          <include name="blogSection"/>
-          <include name="attachScreenShot"/>
-          <include name="termAndCondition"/>
-          <include name="intializeWebdriver"/>
-        </methods>
-      </class> <!-- tests.sectionInfoTest -->
-      <class name="tests.helpTest">
-        <methods>
-          <include name="closeBrowser"/>
-          <include name="endReport"/>
-          <include name="careers"/>
-          <include name="attachScreenShot"/>
-          <include name="openBrowser"/>
-          <include name="intializeWebdriver"/>
-          <include name="setExtent"/>
-        </methods>
-      </class> <!-- tests.helpTest -->
+      </class> <!-- tests.busHireOutstationTest -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->

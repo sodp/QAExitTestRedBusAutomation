@@ -42,7 +42,7 @@ public class BaseTest {
 	static FileInputStream logfile = null;
 
 	public static ExcelFileIO reader = null;
-	
+
 	static Properties prop = new Properties();
 
 	static {
@@ -65,7 +65,7 @@ public class BaseTest {
 
 		try {
 
-			reader = new util.ExcelFileIO(".\\Resources\\testDataExcel.xlsx");
+			reader = new util.ExcelFileIO(".\\Resources\\data.xlsx");
 		} catch (Exception e) {
 
 			logger.error(e.getMessage());
@@ -88,9 +88,12 @@ public class BaseTest {
 	public void attachScreenShot(ITestResult result) {
 		if (result.getStatus() == ITestResult.FAILURE) {
 			String screenshotPath = ScreenShots.takeScreenShot(driver, result.getName());
+			System.out.print(screenshotPath);
 			extentTest.log(LogStatus.FAIL, extentTest.addScreenCapture(screenshotPath));
+			extentTest.log(LogStatus.FAIL, "ERROR DESCRIPTION : " + result.getThrowable());
+
 		} else if (result.getStatus() == ITestResult.SUCCESS) {
-			extentTest.log(LogStatus.PASS, "Valid scenario test case passed successfully");
+			extentTest.log(LogStatus.PASS, "Test case passed successfully");
 		}
 		extent.endTest(extentTest);
 	}
@@ -119,9 +122,11 @@ public class BaseTest {
 			if (headless.equalsIgnoreCase("yes")) {
 				System.setProperty(prop.getProperty("driverc"), prop.getProperty("pathc"));
 				ChromeOptions options = new ChromeOptions();
-//				options.addArguments("--disable-notifications");
-//                options.addArguments("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36");
-//				options.addArguments("headless");
+
+				options.addArguments("--disable-notifications");
+				options.addArguments(
+						"user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36");
+				options.addArguments("headless");
 				driver = new ChromeDriver(options);
 			} else if (headless.equalsIgnoreCase("no")) {
 				System.setProperty(prop.getProperty("driverc"), prop.getProperty("pathc"));
