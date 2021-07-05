@@ -3,7 +3,7 @@ Selenium_Exit_Siddhant_Panda_3164895
 Automation Test Practice UI Automation [Testing Website URL](https://www.redbus.in/)
 ==============================================================
 
-[Git Hub Repo](https://github.com/sodp/ExitTestAutomationQARedBus.git)
+[Git Hub Repo](https://github.com/sodp/QAExitTestRedBusAutomation.git)
 ====================================================================
 
 Abstract
@@ -30,7 +30,7 @@ This project uses Page Object Model (POM) Framework  and  it use test driven app
 
 * Module 3: Global Booking
 			
-		-globalSiteBookingPage
+			-globalSiteBookingPage
 			-Singapore Booking Page
 			-Malaysia Booking Page
 			-Indonesia Booking Page
@@ -39,7 +39,7 @@ This project uses Page Object Model (POM) Framework  and  it use test driven app
 
 * Module 4: Section Info
 			
-		-InfoSection sectionInfoPage
+			-InfoSection sectionInfoPage
 			-Terms and Condition Page
 			-Privacy Policy Page	
 			-FAQ Page	
@@ -57,6 +57,42 @@ This project uses Page Object Model (POM) Framework  and  it use test driven app
 
        -Valid Search Bus		
        -Valid Modify Search Bus		
+
+* Docker module
+
+* Steps to set up docker:
+
+	-Install docker in your system
+	
+	*Pull the following docker images :
+	
+			-docker pull selenium/hub
+	
+			-docker pull selenium/node-chrome
+	
+			-docker pull selenium/node-firefox
+	
+			-use the docker-compose.yml file for the next step
+	
+			-docker-compose -f /path/to/docker-compose.yml up -d
+	
+			-This makes the grid up and running. you can verify it by         
+			
+			-visiting : http://localhost:4444/grid/console
+			
+			-docker-compose up -d
+          
+          -docker ps -a
+
+          -docker-compose down
+
+(To run the test cases on docker set, browser = chrome/firefox , headless = no and docker = true)
+
+* Jenkins module
+
+		-The project has been integrated with github and jenkins.
+	 	-https://github.com/sodp/QAExitTestRedBusAutomation.git (Git Hub Link)
+       -A screenshot of the jenkins integration is present in the project directory.
 
 
 
@@ -98,10 +134,11 @@ To Run  the framework in jenkins follow the jenkin.doc
 
 
 ## Requirements
-		java
-		eclipse
-		jenikins	
-		docker
+
+		-java
+		-eclipse
+		-jenikins	
+		-docker
 
 ## Dependencies to install
     Note : The dependencies are already present in pom file.
@@ -110,42 +147,76 @@ To Run  the framework in jenkins follow the jenkin.doc
            -Extent Reports
            -Log4j
            -POI XML     
+           
 ###Tested Website Functionalities:
-	1) Cancel Ticket Page Navigation
-	2) Change Travel Date Page
-	3) ShowTicket navigation scenario test
-	4) Bus Hire Outstation Functionality
-	5) Bus Hire Local Functionality
-	6) All Bus Operators Navigation Test
-	7) Valid careers page scenario test
-	8) Valid SearchBus scenario test
-	9) Global Site booking Singapore Navigation Scenario test
-	10) Global Site Booking of Malaysia Navigation Scenario test
-	11) Global Site Booking of Indonesia Navigation Scenario test
-	12) Global Site Booking of Peru Navigation Scenario Test
-	13) Globally Site Booking of Colombia Navigation Scenario Test
-	14) Valid HelpButton Navigationtest
-	15) Invalid App Link Scenario test
-	16) Valid App Link Scenario test
-	17) Valid Modify Search Bus Location Functionality Test
-	18) Offers Page Navigation Test
-	19) Valid Goibibo Navigation Test
-	20) Valid Make My Trip Navigation test
-	21) rpool Page Andriod App page test
-	22) rpool Page IOS App page test
-	23) Valid search bus test
-	24) Navigate to term And Condition page scenario test
-	25) Navigate to Privacy Policy page  scenario test
-	26) Navigate to FAQ Page  scenario test
-	27) Navigate to Blog Section  scenario test
-	28) Navigate to Insurance Section  scenario test
-	29) Navigate to User Agreement Section  scenario test
-	30) Navigate to Agent Registration  scenario test
+
+	 -Cancel Ticket Page Navigation
+	
+	 -Change Travel Date Page
+	
+	 -ShowTicket navigation scenario test
+	
+	 -Bus Hire Outstation Functionality
+	
+	 -Bus Hire Local Functionality
+	
+	 -All Bus Operators Navigation Test
+	
+	 -Valid careers page scenario test
+	
+	 -Valid SearchBus scenario test
+	
+	 -Global Site booking Singapore Navigation Scenario test
+	
+	 -Global Site Booking of Malaysia Navigation Scenario test
+	
+	 -Global Site Booking of Indonesia Navigation Scenario test
+	
+	 -Global Site Booking of Peru Navigation Scenario Test
+	
+	 -Globally Site Booking of Colombia Navigation Scenario Test
+	
+	 -Valid HelpButton Navigationtest
+	
+	 -Invalid App Link Scenario test
+	
+	 -Valid App Link Scenario test
+	
+	 -Valid Modify Search Bus Location Functionality Test
+	
+	 -Offers Page Navigation Test
+	
+	 -Valid Goibibo Navigation Test
+	
+	 -Valid Make My Trip Navigation test
+	
+	 -rpool Page Andriod App page test
+	
+	 -rpool Page IOS App page test
+	
+	 -Valid search bus test
+	
+	 -Navigate to term And Condition page scenario test
+	
+	 -Navigate to Privacy Policy page  scenario test
+	
+	 -Navigate to FAQ Page  scenario test
+	
+	 -Navigate to Blog Section  scenario test
+	
+	 -Navigate to Insurance Section  scenario test
+	
+	 -Navigate to User Agreement Section  scenario test
+	
+	 -Navigate to Agent Registration  scenario test
 
 
-### Folder structure              
+### Folder structure    
+          
 ####src/main/java
+
 	Pages:
+	
 			bookingManagingPage
 			busHireLocationPage
 			busHireOutstationPage
@@ -162,11 +233,15 @@ To Run  the framework in jenkins follow the jenkin.doc
 			SearchBus
 			sectionInfoPage
 			signinPage
-	util
+	util:
+	
 			calendar
 			datetimepicker
+			
 ####src/main/java
-	Test:  
+
+	Test:
+	  
 			BaseTest
 			BookingCancelTest
 			BookingchangeTravelDateTest
@@ -186,28 +261,34 @@ To Run  the framework in jenkins follow the jenkin.doc
 			SearchBustest
 			sectionInfoTest
 			signinTest
+			
 	Utils
+	
 			ExcelFileIO
 			Execution
 			ScreenShots
 
 ####Drivers
+
 			chromedriver
 			edgedriver
 			geckodriver
 			
 ####Reports
-	report.html
-	screenshots
+
+			report.html
+			screenshots
 
 ####Resources
-	conf.config
-	data.xlsx
-	log4j
-	
-	Readme.md
-	runner.bat
-	pom.xml
-	docker-compose.yml
+
+			conf.config
+			data.xlsx
+			log4j
+			Readme.md
+			runner.bat
+			pom.xml
+			docker-compose.yml
+
+
 
 
