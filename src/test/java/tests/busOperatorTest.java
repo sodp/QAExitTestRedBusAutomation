@@ -23,10 +23,10 @@ public class busOperatorTest  extends BaseTest{
 		busOperatorPage operator  = new busOperatorPage(driver);
 		
 		operator.AllOperators();
-		Thread.sleep(5000);
+		Thread.sleep(1000);
 		String title = "Find list of bus operators in India. Get more than 2000 bus operators information in redBus, India's largest bus booking site.";
 		Assert.assertEquals(title, driver.getTitle());
-		Thread.sleep(5000);
+		Thread.sleep(1000);
 		logger.info("All Bus Operators Navigation Test");
 	}
 

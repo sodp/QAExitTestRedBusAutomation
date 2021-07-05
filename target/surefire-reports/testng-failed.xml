@@ -3,17 +3,53 @@
 <suite thread-count="1" verbose="0" name="Failed suite [Surefire suite]">
   <test thread-count="1" verbose="0" name="Surefire test(failed)">
     <classes>
-      <class name="tests.partnerWebsiteTest">
+      <class name="tests.careerTest">
         <methods>
           <include name="closeBrowser"/>
-          <include name="partnergoibibosite"/>
+          <include name="endReport"/>
+          <include name="attachScreenShot"/>
+          <include name="careers"/>
+          <include name="openBrowser"/>
+          <include name="intializeWebdriver"/>
+          <include name="setExtent"/>
+        </methods>
+      </class> <!-- tests.careerTest -->
+      <class name="tests.mobileAppLinkTest">
+        <methods>
+          <include name="ValidMobileAppLink"/>
+          <include name="InvalidMobileAppLink"/>
+          <include name="closeBrowser"/>
           <include name="endReport"/>
           <include name="attachScreenShot"/>
           <include name="openBrowser"/>
           <include name="intializeWebdriver"/>
           <include name="setExtent"/>
         </methods>
-      </class> <!-- tests.partnerWebsiteTest -->
+      </class> <!-- tests.mobileAppLinkTest -->
+      <class name="tests.rpoolTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="endReport"/>
+          <include name="rpoolandriod"/>
+          <include name="attachScreenShot"/>
+          <include name="openBrowser"/>
+          <include name="intializeWebdriver"/>
+          <include name="setExtent"/>
+          <include name="rpoolios"/>
+        </methods>
+      </class> <!-- tests.rpoolTest -->
+      <class name="tests.signinTest">
+        <methods>
+          <include name="signinInvalid"/>
+          <include name="closeBrowser"/>
+          <include name="endReport"/>
+          <include name="signinValid"/>
+          <include name="attachScreenShot"/>
+          <include name="openBrowser"/>
+          <include name="intializeWebdriver"/>
+          <include name="setExtent"/>
+        </methods>
+      </class> <!-- tests.signinTest -->
       <class name="tests.busHireOutstationTest">
         <methods>
           <include name="closeBrowser"/>
@@ -25,6 +61,105 @@
           <include name="setExtent"/>
         </methods>
       </class> <!-- tests.busHireOutstationTest -->
+      <class name="tests.offerTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="endReport"/>
+          <include name="attachScreenShot"/>
+          <include name="openBrowser"/>
+          <include name="intializeWebdriver"/>
+          <include name="offers"/>
+          <include name="setExtent"/>
+        </methods>
+      </class> <!-- tests.offerTest -->
+      <class name="tests.globalSitesBookingTest">
+        <methods>
+          <include name="open_indonesia_Booking"/>
+          <include name="closeBrowser"/>
+          <include name="endReport"/>
+          <include name="attachScreenShot"/>
+          <include name="open_peru_Booking"/>
+          <include name="openBrowser"/>
+          <include name="open_singapore_Booking"/>
+          <include name="intializeWebdriver"/>
+          <include name="open_Malaysia_Booking"/>
+          <include name="setExtent"/>
+          <include name="open_colombia_Booking"/>
+        </methods>
+      </class> <!-- tests.globalSitesBookingTest -->
+      <class name="tests.busHireLocalTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="endReport"/>
+          <include name="all_bus_operators"/>
+          <include name="attachScreenShot"/>
+          <include name="openBrowser"/>
+          <include name="intializeWebdriver"/>
+          <include name="setExtent"/>
+        </methods>
+      </class> <!-- tests.busHireLocalTest -->
+      <class name="tests.modifySearchBusTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="endReport"/>
+          <include name="careers"/>
+          <include name="attachScreenShot"/>
+          <include name="openBrowser"/>
+          <include name="intializeWebdriver"/>
+          <include name="setExtent"/>
+        </methods>
+      </class> <!-- tests.modifySearchBusTest -->
+      <class name="tests.helpTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="endReport"/>
+          <include name="careers"/>
+          <include name="attachScreenShot"/>
+          <include name="openBrowser"/>
+          <include name="intializeWebdriver"/>
+          <include name="setExtent"/>
+        </methods>
+      </class> <!-- tests.helpTest -->
+      <class name="tests.partnerWebsiteTest">
+        <methods>
+          <include name="partnerWebsitesmakemytrip"/>
+          <include name="closeBrowser"/>
+          <include name="partnergoibibosite"/>
+          <include name="endReport"/>
+          <include name="attachScreenShot"/>
+          <include name="openBrowser"/>
+          <include name="intializeWebdriver"/>
+          <include name="setExtent"/>
+        </methods>
+      </class> <!-- tests.partnerWebsiteTest -->
+      <class name="tests.sectionInfoTest">
+        <methods>
+          <include name="insuranceSection"/>
+          <include name="endReport"/>
+          <include name="openBrowser"/>
+          <include name="faqsection"/>
+          <include name="userAgreementSection"/>
+          <include name="setExtent"/>
+          <include name="agentRegistration"/>
+          <include name="privacyPolicysection"/>
+          <include name="closeBrowser"/>
+          <include name="blogSection"/>
+          <include name="attachScreenShot"/>
+          <include name="termAndCondition"/>
+          <include name="intializeWebdriver"/>
+        </methods>
+      </class> <!-- tests.sectionInfoTest -->
+      <class name="tests.contactTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="endReport"/>
+          <include name="attachScreenShot"/>
+          <include name="ContactRedBus"/>
+          <include name="openBrowser"/>
+          <include name="intializeWebdriver"/>
+          <include name="setExtent"/>
+        </methods>
+      </class> <!-- tests.contactTest -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->

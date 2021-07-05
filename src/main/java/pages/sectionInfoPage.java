@@ -1,4 +1,5 @@
 package pages;
+
 import java.util.ArrayList;
 
 import org.openqa.selenium.Keys;
@@ -43,61 +44,77 @@ public class sectionInfoPage {
 	@FindBy(how = How.XPATH, using = "//button[contains(text(),'Sign In / Sign Up')]")
 	public WebElement signin;
 
-//	@FindBy(how = How.XPATH, using = "//input[@class='sc-htoDjs gdSuEF']")
-//	public WebElement enterMobileNumber;
-
-//	@FindBy(how = How.ID, using = "recaptcha-anchor-label")
-//	public WebElement clickcaptcha;
-
-	public void naviToTC() {
+	public void naviToTC() throws InterruptedException {
 		termcondition.sendKeys(Keys.ENTER);
+		Thread.sleep(1000);
 		ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
+		Thread.sleep(1000);
 		driver.switchTo().window(tabs.get(1));
+		Thread.sleep(1000);
 	}
 
-	public void navitoprivacypolicy() {
+	public void navitoprivacypolicy() throws InterruptedException {
 		privacypolicy.sendKeys(Keys.ENTER);
+		Thread.sleep(1000);
 		ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
+		Thread.sleep(1000);
 		driver.switchTo().window(tabs.get(1));
+		Thread.sleep(1000);
 	}
 
-	public void navitofaq() {
+	public void navitofaq() throws InterruptedException {
 		faq.sendKeys(Keys.ENTER);
+		Thread.sleep(1000);
 		ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
+		Thread.sleep(1000);
 		driver.switchTo().window(tabs.get(1));
+		Thread.sleep(1000);
 	}
 
-	public void navitoblog() {
+	public void navitoblog() throws InterruptedException {
 		blog.sendKeys(Keys.ENTER);
+		Thread.sleep(1000);
 		ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
+		Thread.sleep(1000);
 		driver.switchTo().window(tabs.get(1));
+		Thread.sleep(1000);
 	}
 
-	public void navitooperatorregistration(String mobile_number) {
+	public void navitooperatorregistration(String mobile_number) throws InterruptedException {
 		operatorregistration.sendKeys(Keys.ENTER);
+		Thread.sleep(1000);
 		ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
+		Thread.sleep(1000);
 		driver.switchTo().window(tabs.get(1));
+		Thread.sleep(1000);
 		signin.sendKeys(Keys.ENTER);
-		//enterMobileNumber.sendKeys(mobile_number);
-		//clickcaptcha.sendKeys(Keys.ENTER);
 	}
 
-	public void navitoinsurance() {
+	public void navitoinsurance() throws InterruptedException {
 		insurance.sendKeys(Keys.ENTER);
+		Thread.sleep(1000);
 		ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
+		Thread.sleep(1000);
 		driver.switchTo().window(tabs.get(1));
+		Thread.sleep(1000);
 	}
 
-	public void navitouseragreement() {
+	public void navitouseragreement() throws InterruptedException {
 		useragreement.sendKeys(Keys.ENTER);
+		Thread.sleep(1000);
 		ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
+		Thread.sleep(1000);
 		driver.switchTo().window(tabs.get(1));
+		Thread.sleep(1000);
 	}
 
-	public void navitoagentRegistration() {
+	public void navitoagentRegistration() throws InterruptedException {
 		agentRegistration.sendKeys(Keys.ENTER);
+		Thread.sleep(3000);
 		ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
+		Thread.sleep(3000);
 		driver.switchTo().window(tabs.get(1));
+		Thread.sleep(3000);
 	}
 
 }

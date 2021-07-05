@@ -26,9 +26,9 @@ public class SearchBustest extends BaseTest {
 		SearchBus user = new SearchBus(driver);
 		user.clickBusTicket();
 		user.UserSource(fromLocation);
-		Thread.sleep(2200);
+		Thread.sleep(1000);
 		user.UserDestination(toLocation);
-		Thread.sleep(5000);
+		Thread.sleep(1000);
 		user.clickDate(dateVal);
 		user.SearchButton();
 		logger.info("Valid Search Bus Test Case Passed");

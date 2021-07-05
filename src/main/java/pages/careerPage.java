@@ -28,11 +28,15 @@ public class careerPage {
 		careers.sendKeys(Keys.ENTER);
 	}
 
-	public void goHome() {
+	public void goHome() throws InterruptedException {
 		ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
+		Thread.sleep(1000);
 		driver.switchTo().window(tabs.get(1));
+		Thread.sleep(1000);
 		home.click();
+		Thread.sleep(1000);
 		driver.switchTo().window(tabs.get(0));
+		Thread.sleep(1000);
 	}
 	
 }

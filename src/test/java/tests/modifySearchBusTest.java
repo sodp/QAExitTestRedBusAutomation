@@ -31,22 +31,22 @@ public class modifySearchBusTest extends BaseTest {
 		Execution.toCheckExecutionRequired(executionRequired);
 
 		modifylocation.selectsource(fromLocation);
-		Thread.sleep(5000);
+		Thread.sleep(1000);
 		modifylocation.selectdestination(toLocation);
-		Thread.sleep(5000);
+		Thread.sleep(1000);
 		modifylocation.dateSelectButton();
-		Thread.sleep(5000);
+		Thread.sleep(1000);
 		modifylocation.clicksearchbutton();
-		Thread.sleep(5000);
+		Thread.sleep(1000);
 		modifylocation.modifylocation(toLocation, fromLocation);
-		Thread.sleep(5000);
+		Thread.sleep(1000);
 		modifylocation.modifySearch();
-		Thread.sleep(5000);
+		Thread.sleep(1000);
 
 		String expected = driver.getTitle();
 		logger.info(" Valid Modify Search BusLocation functionality Test Case Passed");
 		Assert.assertEquals(expected, driver.getTitle());
-		Thread.sleep(5000);
+		Thread.sleep(1000);
 	}
 
 }

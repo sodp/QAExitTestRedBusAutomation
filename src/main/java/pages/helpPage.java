@@ -26,11 +26,13 @@ public class helpPage {
 		helpbutton.click();
 	}
 
-	public void closePopup() {
+	public void closePopup() throws InterruptedException {
 		ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
+		Thread.sleep(3000);
 		driver.switchTo().window(tabs.get(1));
+		Thread.sleep(3000);
 		cross.click();
-
+		Thread.sleep(3000);
 	}
 
 }

@@ -27,7 +27,7 @@ public class sectionInfoTest extends BaseTest {
 		logger.info("TermAndCondition Test Case Passed");
 		Assert.assertEquals("Terms & Condition -redBus.in", driver.getTitle());
 
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 	}
 
 	@Test
@@ -48,7 +48,7 @@ public class sectionInfoTest extends BaseTest {
 		
 		Assert.assertEquals("", driver.getTitle());
 
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 	}
 
 	@Test
@@ -68,7 +68,7 @@ public class sectionInfoTest extends BaseTest {
 		logger.info("Info FAQ  Test Case Passed");
 		Assert.assertEquals("FAQ, Frequently Asked Question-redBus", driver.getTitle());
 
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 	}
 
 	@Test
@@ -88,7 +88,7 @@ public class sectionInfoTest extends BaseTest {
 		logger.info("Info Blog Section  Test Case Passed");
 		Assert.assertEquals("redBus Blog - redBus - Easiest Way to Buy Bus Tickets Online in India", driver.getTitle());
 
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 	}
 
 	@Test
@@ -108,7 +108,7 @@ public class sectionInfoTest extends BaseTest {
 		logger.info("Info Insurance Section  Test Case Passed");
 		Assert.assertEquals("General Insurance - Buy Insurance Policy Online in India at ICICI Lombard",
 				driver.getTitle());
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 	}
 
 	@Test
@@ -128,7 +128,7 @@ public class sectionInfoTest extends BaseTest {
 		logger.info("Info user Agreement Section   Test Case Passed");
 		Assert.assertEquals("User Agreement -redBus.in", driver.getTitle());
 
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 	}
 
 	@Test
@@ -149,6 +149,6 @@ public class sectionInfoTest extends BaseTest {
 		Assert.assertEquals("Seat Seller", driver.getTitle());
 		
 
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 	}
 }

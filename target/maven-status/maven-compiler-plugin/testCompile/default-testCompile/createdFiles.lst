@@ -1,5 +1,6 @@
 tests\modifySearchBusTest.class
 util\ExcelFileIO.class
+util\Execution.class
 tests\careerTest.class
 tests\rpoolTest.class
 tests\BookingchangeTravelDateTest.class
@@ -13,8 +14,10 @@ tests\signinTest.class
 tests\partnerWebsiteTest.class
 tests\globalSitesBookingTest.class
 tests\SearchBustest.class
+tests\busHireLocalTest.class
 tests\busHireOutstationTest.class
 tests\sectionInfoTest.class
 tests\busOperatorTest.class
 tests\BookingCancelTest.class
+util\webDriver.class
 tests\offerTest.class

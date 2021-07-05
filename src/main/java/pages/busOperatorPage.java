@@ -1,6 +1,7 @@
 package pages;
 
 import java.util.ArrayList;
+import java.util.Set;
 
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -17,15 +18,16 @@ public class busOperatorPage {
 		this.driver = driver;
 	}
 
-	
-
 	@FindBy(how = How.XPATH, using = "//a[contains(text(),'All Operators >')]")
 	public WebElement busoperators;
-	
-	public void AllOperators() {
+
+	public void AllOperators() throws InterruptedException {
 		busoperators.sendKeys(Keys.ENTER);
+		Thread.sleep(1000);
 		ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
+		Thread.sleep(1000);
 		driver.switchTo().window(tabs.get(1));
+		Thread.sleep(1000);
 	}
 
 }

@@ -28,22 +28,26 @@ public class contactPage {
 
 	public void contactusButton() throws Throwable {
 		contactus.sendKeys(Keys.ENTER);
-		Thread.sleep(3000);
+		Thread.sleep(1000);
 
 	}
 
 	public void clickSupport() throws Throwable {
 		ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
+		Thread.sleep(1000);
 		driver.switchTo().window(tabs.get(1));
+		Thread.sleep(1000);
 		clickhere.click();
-		Thread.sleep(3000);
+		Thread.sleep(1000);
 	}
 
 
 	public void close() throws Throwable {
 		ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
+		Thread.sleep(1000);
 		driver.switchTo().window(tabs.get(2));
+		Thread.sleep(1000);
 		closePopUp.click();
-		Thread.sleep(3000);
+		Thread.sleep(1000);
 	}
 }

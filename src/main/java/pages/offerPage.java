@@ -24,9 +24,11 @@ public class offerPage {
 
 	public void clickOfferButton() throws Throwable {
 		clickoffer.sendKeys(Keys.ENTER);
+		Thread.sleep(1000);
 		ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
+		Thread.sleep(1000);
 		driver.switchTo().window(tabs.get(1));
-		Thread.sleep(3000);
+		Thread.sleep(1000);
 
 	}
 

@@ -4,8 +4,11 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
+
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
@@ -15,19 +18,25 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxBinary;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
 import util.ExcelFileIO;
 import util.ScreenShots;
+import util.webDriver;
 
 public class BaseTest {
+
+	// protected static ThreadLocal<RemoteWebDriver> driver = new ThreadLocal<>();
+	public static String remote_url = "http://localhost:4444/wd/hub";
 
 	public static WebDriver driver;
 	public static ExtentReports extent; // set path where report would be generated
@@ -43,7 +52,7 @@ public class BaseTest {
 
 	public static ExcelFileIO reader = null;
 
-	static Properties prop = new Properties();
+	protected static Properties prop = new Properties();
 
 	static {
 		try {
@@ -98,10 +107,15 @@ public class BaseTest {
 		extent.endTest(extentTest);
 	}
 
+//	@BeforeMethod
+//    public static void initWebDriver() throws Exception {
+//        webDriver.intializeWebdriver();
+//    }
 	@BeforeMethod
 	public static void intializeWebdriver() throws Exception {
 		String browser = prop.getProperty("browser");
 		String headless = prop.getProperty("headless");
+		String docker_flag = prop.getProperty("docker");
 		// Check if parameter passed is firefox
 		if (browser.equalsIgnoreCase("firefox")) {
 			if (headless.equalsIgnoreCase("yes")) {
@@ -111,10 +125,23 @@ public class BaseTest {
 				FirefoxOptions options = new FirefoxOptions();
 				options.setBinary(firefoxBinary);
 				driver = new FirefoxDriver(options);
-			} else if (headless.equalsIgnoreCase("no")) {
+			} else if (headless.equalsIgnoreCase("yes") && docker_flag.equalsIgnoreCase("true")) {
+				System.out.println("****************FIREFOX HEADLESS*****************");
+				FirefoxBinary firefoxBinary = new FirefoxBinary();
+				firefoxBinary.addCommandLineOptions("-headless");
+				FirefoxOptions options = new FirefoxOptions();
+				driver = (new RemoteWebDriver(new URL("http:localhost:4444/wd/hub"), options));
+			} else if (headless.equalsIgnoreCase("no") && docker_flag.equalsIgnoreCase("false")) {
 				System.setProperty(prop.getProperty("driverf"), prop.getProperty("pathf"));
 				driver = new FirefoxDriver();
+			} else if (headless.equalsIgnoreCase("no") && docker_flag.equalsIgnoreCase("true")) {
+				System.out.println("****************FIREFOX*****************");
+				FirefoxOptions options = new FirefoxOptions();
+				driver = (new RemoteWebDriver(new URL("http:localhost:4444/wd/hub"), options));
+			} else {
+				driver = new FirefoxDriver();
 			}
+
 		}
 
 		// Check if parameter passed as 'chrome'
@@ -125,13 +152,20 @@ public class BaseTest {
 
 				options.addArguments("--disable-notifications");
 				options.addArguments(
-						"user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36");
+						"user-agent=Mozilla/5.0 (Windows NT 8.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36");
 				options.addArguments("headless");
 				driver = new ChromeDriver(options);
-			} else if (headless.equalsIgnoreCase("no")) {
+			} else if (headless.equalsIgnoreCase("no") && docker_flag.equalsIgnoreCase("false")) {
 				System.setProperty(prop.getProperty("driverc"), prop.getProperty("pathc"));
 				driver = new ChromeDriver();
+			} else if (headless.equalsIgnoreCase("no") && docker_flag.equalsIgnoreCase("true")) {
+				System.out.println("****************CHROME*****************");
+				FirefoxOptions options = new FirefoxOptions();
+				driver = (new RemoteWebDriver(new URL("http:localhost:4444/wd/hub"), options));
+			} else {
+				driver = new ChromeDriver();
 			}
+
 		}
 		// Check if parameter passed as 'Edge'
 		else if (browser.equalsIgnoreCase("edge")) {
@@ -142,7 +176,7 @@ public class BaseTest {
 			// If no browser passed throw exception
 			throw new Exception("PLEASE CHECK THE BROWSER NAME !");
 		}
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
 	}
 
 	@BeforeMethod
@@ -154,7 +188,7 @@ public class BaseTest {
 
 	@AfterMethod
 	public static void closeBrowser() {
-		driver.close();
+		/// driver.close();
 		driver.quit();
 	}
 
