@@ -18,6 +18,7 @@ public class rpoolTest extends BaseTest {
 
 		HashMap<String, String> data = new HashMap<String, String>();
 		data = reader.getRowTestData(sheetName, testcase);
+		//Check Execution Required 
 		String executionRequired = data.get("Execution Required").toLowerCase();
 		Execution.toCheckExecutionRequired(executionRequired);
 		rpoolPage rpool = new rpoolPage(driver);
@@ -26,10 +27,11 @@ public class rpoolTest extends BaseTest {
 		Assert.assertEquals("Carpool in Bangalore || The best Carpool app by redBus", driver.getTitle());
 		Thread.sleep(1000);
 		rpool.android();
-		Assert.assertEquals(driver.getCurrentUrl(), "https://play.google.com/store/apps/details?id=in.redbus.android&amp;hl=en");
+		Assert.assertEquals(driver.getCurrentUrl(),
+				"https://play.google.com/store/apps/details?id=in.redbus.android&amp;hl=en");
 		logger.info("rpool Andriod Test Case Passed");
 	}
-	
+
 	@Test
 	public void rpoolios() throws Throwable {
 		extentTest = extent.startTest("rPool Page functionality scenario test");
@@ -48,7 +50,7 @@ public class rpoolTest extends BaseTest {
 		Thread.sleep(1000);
 		rpool.ios();
 		Assert.assertEquals(driver.getCurrentUrl(), "https://apps.apple.com/in/app/redbus/id733712604");
-		
+
 		logger.info("rpool ios Test Case Passed");
 	}
 }

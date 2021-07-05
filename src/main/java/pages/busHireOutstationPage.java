@@ -27,13 +27,13 @@ public class busHireOutstationPage {
 	@FindBy(how = How.XPATH, using = "//div[contains(text(),'Outstation')]")
 	public WebElement outStationMenu;
 
-	@FindBy(how = How.ID, using = "locationTextFieldLocal") 
+	@FindBy(how = How.ID, using = "locationTextFieldLocal")
 	public WebElement pickaddress;
 
-	@FindBy(how = How.ID, using = "local_dest_name") 
+	@FindBy(how = How.ID, using = "local_dest_name")
 	public WebElement destiaddress;
 
-	@FindBy(how = How.ID, using = "numberOfPax") 
+	@FindBy(how = How.ID, using = "numberOfPax")
 	public WebElement traveller;
 
 	@FindBy(how = How.ID, using = "proceedButtonOutstation")
@@ -45,9 +45,9 @@ public class busHireOutstationPage {
 	@FindBy(how = How.XPATH, using = "//*[@id='from_datepicker']/div/div/input")
 	public WebElement timedatefrom;
 
-	@FindBy(how=How.XPATH , using ="//button[@id='proceedButtonSummary']")
+	@FindBy(how = How.XPATH, using = "//button[@id='proceedButtonSummary']")
 	public WebElement viewVechiles;
-	
+
 	public void naviToBusHire() {
 
 		link.click();
@@ -68,8 +68,7 @@ public class busHireOutstationPage {
 
 	public void PickAddress(String pickAddress) throws Throwable {
 		pickaddress.sendKeys(pickAddress);
-		driver.findElement(By.xpath("//span[contains(text(),'Noida Sector 18, Noida, Uttar Pradesh, India')]"))
-				.click();
+		driver.findElement(By.xpath("//span[contains(text(),'Noida Sector 18, Noida, Uttar Pradesh, India')]")).click();
 		Thread.sleep(1000);
 
 	}
@@ -107,7 +106,7 @@ public class busHireOutstationPage {
 			e.printStackTrace();
 		}
 		timedateto.click();
-	
+
 		// selecting date and time
 		try {
 			datetimepicker.selectDateAndTimeAtBusHirePage(driver, tillVal);
@@ -115,7 +114,6 @@ public class busHireOutstationPage {
 
 			e.printStackTrace();
 		}
-		
 
 	}
 
@@ -124,5 +122,5 @@ public class busHireOutstationPage {
 		Thread.sleep(1000);
 
 	}
-	
+
 }

@@ -13,10 +13,10 @@ public class busHireLocalTest extends BaseTest {
 
 	@Test
 	public void all_bus_operators() throws Throwable {
-	
-		extentTest = extent.startTest("Bus Hire Outstaion Functionality");
+
+		extentTest = extent.startTest("Bus Hire Local Functionality");
 		String testName = "Local Functionality";
-		
+
 		HashMap<String, String> testData = new HashMap<String, String>();
 		testData = reader.getRowTestData(sheetName, testName);
 		String fromLocation = testData.get("From");
@@ -24,13 +24,13 @@ public class busHireLocalTest extends BaseTest {
 		String sourceTime = testData.get("Source");
 		String destinationTime = testData.get("Destination");
 		String passengers = testData.get("No Of Passengers");
-		
-		// if execution required field is no
+
+		//Check Execution Required 
 		String executionRequired = testData.get("Execution Required").toLowerCase();
 		Execution.toCheckExecutionRequired(executionRequired);
-	
-		busHireLocationPage Local  = new busHireLocationPage(driver);
-		
+
+		busHireLocationPage Local = new busHireLocationPage(driver);
+
 		Local.naviToBusHire();
 		Local.LocalMenu();
 		Local.pickupAddress(fromLocation);
@@ -40,8 +40,7 @@ public class busHireLocalTest extends BaseTest {
 		Thread.sleep(2000);
 		Local.Proceed();
 		Assert.assertEquals(Local.viewVechiles.getText(), "VIEW VEHICLES");
-		logger.info("All Operators Test Case Passed");
-
+		logger.info("Local Test Case Passed");
 
 	}
 

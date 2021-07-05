@@ -29,8 +29,8 @@ public class signinPage {
 
 	@FindBy(how = How.CLASS_NAME, using = "modalIframe")
 	public WebElement frame;
-	
-	@FindBy(how=How.CLASS_NAME, using ="//span[contains(text(),'Please enter valid mobile number')]")
+
+	@FindBy(how = How.CLASS_NAME, using = "//span[contains(text(),'Please enter valid mobile number')]")
 	public WebElement invalid;
 
 	public void naviSignin() {
@@ -57,7 +57,7 @@ public class signinPage {
 	public String charRemoveAt(String str, int p) {
 		return str.substring(0, p) + str.substring(p + 1);
 	}
-	
+
 	public String GetInvalid() {
 		return invalid.getText();
 	}

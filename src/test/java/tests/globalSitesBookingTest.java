@@ -21,12 +21,12 @@ public class globalSitesBookingTest extends BaseTest {
 		globalSiteBookingPage countrysingapore = new globalSiteBookingPage(driver);
 		HashMap<String, String> data = new HashMap<String, String>();
 		data = reader.getRowTestData(sheetName, testcase);
+		//Check Execution Required 
 		String executionRequired = data.get("Execution Required").toLowerCase();
 
 		Execution.toCheckExecutionRequired(executionRequired);
 
 		countrysingapore.singaporeBooking();
-
 
 		String page_title = "Singapore Bus tickets online, Singapore Express Bus, Super VIP Coach Booking - redBus";
 		logger.info("Global website country  Singapore Test Case Passed");
@@ -42,6 +42,7 @@ public class globalSitesBookingTest extends BaseTest {
 		globalSiteBookingPage countrymalaysia = new globalSiteBookingPage(driver);
 		HashMap<String, String> data = new HashMap<String, String>();
 		data = reader.getRowTestData(sheetName, testcase);
+		//Check Execution Required 
 		String executionRequired = data.get("Execution Required").toLowerCase();
 
 		Execution.toCheckExecutionRequired(executionRequired);
@@ -61,6 +62,7 @@ public class globalSitesBookingTest extends BaseTest {
 		globalSiteBookingPage countryindonesia = new globalSiteBookingPage(driver);
 		HashMap<String, String> data = new HashMap<String, String>();
 		data = reader.getRowTestData(sheetName, testcase);
+		//Check Execution Required 
 		String executionRequired = data.get("Execution Required").toLowerCase();
 
 		Execution.toCheckExecutionRequired(executionRequired);
@@ -80,6 +82,7 @@ public class globalSitesBookingTest extends BaseTest {
 		globalSiteBookingPage countryperu = new globalSiteBookingPage(driver);
 		HashMap<String, String> data = new HashMap<String, String>();
 		data = reader.getRowTestData(sheetName, testcase);
+		//Check Execution Required 
 		String executionRequired = data.get("Execution Required").toLowerCase();
 
 		Execution.toCheckExecutionRequired(executionRequired);
@@ -100,6 +103,7 @@ public class globalSitesBookingTest extends BaseTest {
 		globalSiteBookingPage countrycolombia = new globalSiteBookingPage(driver);
 		HashMap<String, String> data = new HashMap<String, String>();
 		data = reader.getRowTestData(sheetName, testcase);
+		//Check Execution Required 
 		String executionRequired = data.get("Execution Required").toLowerCase();
 
 		Execution.toCheckExecutionRequired(executionRequired);

@@ -9,7 +9,7 @@ import pages.sectionInfoPage;
 import util.Execution;
 
 public class sectionInfoTest extends BaseTest {
-	private String sheetName = "Section Info"; 
+	private String sheetName = "Section Info";
 
 	@Test
 	public void termAndCondition() throws Throwable {
@@ -18,6 +18,7 @@ public class sectionInfoTest extends BaseTest {
 		String testcase = "Terms and Condition Page";
 		HashMap<String, String> data = new HashMap<String, String>();
 		data = reader.getRowTestData(sheetName, testcase);
+		//Check Execution Required 
 		String executionRequired = data.get("Execution Required").toLowerCase();
 
 		Execution.toCheckExecutionRequired(executionRequired);
@@ -45,7 +46,7 @@ public class sectionInfoTest extends BaseTest {
 		info.navitoprivacypolicy();
 
 		logger.info("Info privacyPolicy  Test Case Passed");
-		
+
 		Assert.assertEquals("", driver.getTitle());
 
 		Thread.sleep(1000);
@@ -55,7 +56,7 @@ public class sectionInfoTest extends BaseTest {
 	public void faqsection() throws Throwable {
 		extentTest = extent.startTest("Navigate to FAQ Page  scenario test");
 		sectionInfoPage info = new sectionInfoPage(driver);
-		String testcase = "FAQ Page"; 
+		String testcase = "FAQ Page";
 
 		HashMap<String, String> data = new HashMap<String, String>();
 		data = reader.getRowTestData(sheetName, testcase);
@@ -115,7 +116,7 @@ public class sectionInfoTest extends BaseTest {
 	public void userAgreementSection() throws Throwable {
 		extentTest = extent.startTest("Navigate to User Agreement Section  scenario test");
 		sectionInfoPage info = new sectionInfoPage(driver);
-		String testcase = "User Agreement Page"; 
+		String testcase = "User Agreement Page";
 
 		HashMap<String, String> data = new HashMap<String, String>();
 		data = reader.getRowTestData(sheetName, testcase);
@@ -135,7 +136,7 @@ public class sectionInfoTest extends BaseTest {
 	public void agentRegistration() throws Throwable {
 		extentTest = extent.startTest("Navigate to Agent Registration  scenario test");
 		sectionInfoPage info = new sectionInfoPage(driver);
-		String testcase = "Agent Registration Page"; 
+		String testcase = "Agent Registration Page";
 
 		HashMap<String, String> data = new HashMap<String, String>();
 		data = reader.getRowTestData(sheetName, testcase);
@@ -147,7 +148,6 @@ public class sectionInfoTest extends BaseTest {
 
 		logger.info("Info agentRegistration  Test Case Passed");
 		Assert.assertEquals("Seat Seller", driver.getTitle());
-		
 
 		Thread.sleep(1000);
 	}

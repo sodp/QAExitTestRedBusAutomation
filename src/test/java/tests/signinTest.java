@@ -19,9 +19,9 @@ public class signinTest extends BaseTest {
 		signinPage usersignin = new signinPage(driver);
 		HashMap<String, String> testData = new HashMap<String, String>();
 		testData = reader.getRowTestData(sheetName, testName);
+		//Check Execution Required 
 		String executionRequired = testData.get("Execution Required").toLowerCase();
 		String mobile = testData.get("Mobile Number");
-
 
 		Execution.toCheckExecutionRequired(executionRequired);
 		usersignin.naviSignin();

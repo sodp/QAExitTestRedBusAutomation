@@ -21,8 +21,6 @@ public class modifySearchBusPage {
 	@FindBy(how = How.XPATH, using = "//span[@class='fl icon-calendar_icon-new icon-onward-calendar icon']")
 	public WebElement selectdate;
 
-
-
 	@FindBy(how = How.ID, using = "src")
 	public WebElement source;
 
@@ -39,26 +37,26 @@ public class modifySearchBusPage {
 	public WebElement modifysearchbusbutton;
 
 	public void selectsource(String sourcellocation) {
-		//source.clear();
+		// source.clear();
 		source.sendKeys(sourcellocation);
 	}
 
-	public void selectdestination(String destloaction)   {
-		//destination.clear();
+	public void selectdestination(String destloaction) {
+		// destination.clear();
 		destination.sendKeys(destloaction);
 	}
 
-	public void dateSelectButton() throws Throwable   {
+	public void dateSelectButton() throws Throwable {
 
 		calender.selectDate(selectdate, "2021", "July", "10", driver);
-	
+
 	}
 
-	public void clicksearchbutton()   {
+	public void clicksearchbutton() {
 		searchbus.click();
 	}
 
-	public void modifylocation(String sourcellocation, String destloaction)  {
+	public void modifylocation(String sourcellocation, String destloaction) {
 		modifysearchbus.click();
 		source.clear();
 		source.sendKeys(sourcellocation);
@@ -66,12 +64,11 @@ public class modifySearchBusPage {
 		destination.clear();
 		destination.sendKeys(destloaction);
 		destination.sendKeys(Keys.ENTER);
-		
+
 	}
 
 	public void modifySearch() {
 		modifysearchbusbutton.click();
 	}
 
-	
 }

@@ -1,4 +1,5 @@
 package pages;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -18,13 +19,12 @@ public class bookingManagingPage {
 
 	@FindBy(how = How.XPATH, using = "//span[contains(text(),'Cancel')]")
 	public WebElement clickcancel;
-	
+
 	@FindBy(how = How.XPATH, using = "//span[contains(text(),'Change Travel Date')]")
 	public WebElement changetraveldate;
-	
+
 	@FindBy(how = How.XPATH, using = "//span[contains(text(),'Show My Ticket')]")
-	public WebElement showticket ;
-	
+	public WebElement showticket;
 
 	public void ManageBooking() {
 		managebooking.click();
@@ -34,7 +34,7 @@ public class bookingManagingPage {
 	public void CancelButton() {
 		clickcancel.click();
 	}
-	
+
 	public void TravelDate() {
 		managebooking.click();
 		changetraveldate.click();

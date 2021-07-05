@@ -29,7 +29,7 @@ public class busHireLocationPage {
 
 	@FindBy(how = How.XPATH, using = "//button[@id='proceedButtonLocal']")
 	private WebElement button;
-	
+
 	@FindBy(how = How.XPATH, using = "//*[@id='to_datepicker']/div/div/input")
 	private WebElement timedateto;
 
@@ -41,11 +41,9 @@ public class busHireLocationPage {
 
 	@FindBy(how = How.XPATH, using = "//input[@class=\"MuiInputBase-input MuiInput-input\"]")
 	private WebElement localdate;
-	
-	@FindBy(how=How.XPATH , using ="//button[@id='proceedButtonSummary']")
+
+	@FindBy(how = How.XPATH, using = "//button[@id='proceedButtonSummary']")
 	public WebElement viewVechiles;
-	
-	
 
 	public void naviToBusHire() {
 
@@ -65,15 +63,12 @@ public class busHireLocationPage {
 		}
 	}
 
-	public void pickupAddress(String pickup)
-	{
+	public void pickupAddress(String pickup) {
 		PickUp.sendKeys(pickup);
 		driver.findElement(By.xpath("//span[contains(text(),'Noida Sector 18, Noida, Uttar Pradesh, India')]")).click();
 	}
 
-	
-	
-	public void selectdate(String from ) throws InterruptedException {
+	public void selectdate(String from) throws InterruptedException {
 		try {
 			Thread.sleep(100);
 		} catch (InterruptedException e) {
@@ -94,9 +89,9 @@ public class busHireLocationPage {
 
 			e.printStackTrace();
 		}
-		//timedateto.click();
+		// timedateto.click();
 	}
-	
+
 	public void TotalPassenger(String passenger) {
 		traveller.sendKeys(passenger);
 	}

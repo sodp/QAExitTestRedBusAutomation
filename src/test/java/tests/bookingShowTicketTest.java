@@ -1,4 +1,5 @@
 package tests;
+
 import java.util.HashMap;
 
 import org.testng.Assert;
@@ -7,19 +8,18 @@ import org.testng.annotations.Test;
 import pages.bookingManagingPage;
 import util.Execution;
 
-
-
 public class bookingShowTicketTest extends BaseTest {
-	private String sheetName = "Manage Booking"; 
+	private String sheetName = "Manage Booking";
 
 	@Test
 	public void ShowTicket() throws Throwable {
 		extentTest = extent.startTest("ShowTicket navigation scenario test");
-		String testcase = "Show My Ticket Page"; 
+		String testcase = "Show My Ticket Page";
 
 		bookingManagingPage show_ticket = new bookingManagingPage(driver);
 		HashMap<String, String> data = new HashMap<String, String>();
 		data = reader.getRowTestData(sheetName, testcase);
+		//Check Execution Required 
 		String executionRequired = data.get("Execution Required").toLowerCase();
 
 		Execution.toCheckExecutionRequired(executionRequired);

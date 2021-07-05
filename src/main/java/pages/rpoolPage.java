@@ -1,4 +1,5 @@
 package pages;
+
 import java.util.ArrayList;
 import java.util.Set;
 
@@ -32,7 +33,7 @@ public class rpoolPage {
 		rpool.click();
 	}
 
-	public void serachCity()  {
+	public void serachCity() {
 		clickit.click();
 
 	}
@@ -45,6 +46,7 @@ public class rpoolPage {
 		driver.switchTo().window(tabs.get(1));
 		Thread.sleep(1000);
 	}
+
 	public void ios() throws InterruptedException {
 		appleStore.click();
 		Thread.sleep(1000);
@@ -53,6 +55,5 @@ public class rpoolPage {
 		driver.switchTo().window(tabs.get(1));
 		Thread.sleep(1000);
 	}
-	
 
 }

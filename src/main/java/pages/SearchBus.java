@@ -9,6 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class SearchBus {
 	WebDriver driver;
+
 	public SearchBus(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 		this.driver = driver;
@@ -44,15 +45,15 @@ public class SearchBus {
 	// select start date
 	@FindBy(how = How.ID, using = "txtOnwardCalendar")
 	public WebElement ClickDate;
-	
-	public static void selectDate(WebDriver driver,WebElement element , String dateVal) {
-		JavascriptExecutor js = ((JavascriptExecutor)driver);
-		js.executeScript("arguments[0].setAttribute('value','"+dateVal+"')", element);
+
+	public static void selectDate(WebDriver driver, WebElement element, String dateVal) {
+		JavascriptExecutor js = ((JavascriptExecutor) driver);
+		js.executeScript("arguments[0].setAttribute('value','" + dateVal + "')", element);
 	}
 
 	public void clickDate(String Date) {
-		selectDate(driver,ClickDate,Date);
-		//ClickDate.sendKeys(Date);
+		selectDate(driver, ClickDate, Date);
+		// ClickDate.sendKeys(Date);
 	}
 
 	@FindBy(how = How.XPATH, using = "//body/div[@id='root']/div[1]/div[1]/div[1]/div[3]/button[1]")

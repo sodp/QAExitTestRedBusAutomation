@@ -41,7 +41,6 @@ public class contactPage {
 		Thread.sleep(1000);
 	}
 
-
 	public void close() throws Throwable {
 		ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
 		Thread.sleep(1000);

@@ -17,7 +17,6 @@ public class careerPage {
 		this.driver = driver;
 	}
 
-	
 	@FindBy(how = How.XPATH, using = "//a[contains(text(),'Careers')]")
 	public WebElement careers;
 
@@ -38,5 +37,5 @@ public class careerPage {
 		driver.switchTo().window(tabs.get(0));
 		Thread.sleep(1000);
 	}
-	
+
 }

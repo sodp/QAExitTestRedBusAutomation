@@ -8,7 +8,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
-public class partnerWebsitePage  {
+public class partnerWebsitePage {
 	WebDriver driver;
 
 	public partnerWebsitePage(WebDriver driver) {
@@ -29,7 +29,7 @@ public class partnerWebsitePage  {
 		driver.switchTo().window(tabs.get(1));
 		Thread.sleep(1000);
 	}
-	
+
 	public void MakemytripSite() throws InterruptedException {
 		makemytrip.click();
 		ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
@@ -37,6 +37,5 @@ public class partnerWebsitePage  {
 		driver.switchTo().window(tabs.get(1));
 		Thread.sleep(5000);
 	}
-
 
 }

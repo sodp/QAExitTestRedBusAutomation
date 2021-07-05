@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" thread-count="2" parallel="tests">
+  <test thread-count="5" name="Test1" >
+  <parameter name="Port" value="5001" />
+    <classes>
+      <class name="tests.BookingCancelTest"/>
+      <class name="tests.careerTest"/>
+      <class name="tests.busOperatorTest"/>
+      <class name="tests.busHireOutstationTest"/>
+      <class name="tests.contactTest"/>
+      <class name="tests.partnerWebsiteTest"/>
+      <class name="tests.helpTest"/>
+      <class name="tests.SearchBustest"/>
+      </classes>
+      </test>
+  <test thread-count="5" name="Test2" >
+   <parameter name="Port" value="5002" />
+    <classes>
+      <class name="tests.rpoolTest"/>
+      <class name="tests.mobileAppLinkTest"/>
+      <class name="tests.offerTest"/>
+      <class name="tests.BookingchangeTravelDateTest"/>
+      <class name="tests.busHireLocalTest"/>
+      <class name="tests.globalSitesBookingTest"/>
+      <class name="tests.bookingShowTicketTest"/>
+      <class name="tests.modifySearchBusTest"/>
+      <class name="tests.sectionInfoTest"/>
+      <class name="tests.signinTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -9,16 +9,18 @@ import pages.offerPage;
 import util.Execution;
 
 public class offerTest extends BaseTest {
-	private String sheetName = "Home Page"; 
+	private String sheetName = "Home Page";
+
 	@Test
 	public void offers() throws Throwable {
 		extentTest = extent.startTest("Offers Page Navigation Test");
-		String testcase = "Offer Page"; 
+		String testcase = "Offer Page";
 		HashMap<String, String> data = new HashMap<String, String>();
 		data = reader.getRowTestData(sheetName, testcase);
+		//Check Execution Required 
 		String executionRequired = data.get("Execution Required").toLowerCase();
 		Execution.toCheckExecutionRequired(executionRequired);
-		
+
 		offerPage useroffers = new offerPage(driver);
 		useroffers.clickOfferButton();
 

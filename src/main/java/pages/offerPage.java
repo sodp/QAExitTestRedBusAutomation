@@ -1,4 +1,5 @@
 package pages;
+
 import java.util.ArrayList;
 
 import org.openqa.selenium.Keys;
@@ -7,8 +8,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
+
 public class offerPage {
-	
+
 	WebDriver driver;
 
 	public offerPage(WebDriver driver) {
@@ -16,11 +18,8 @@ public class offerPage {
 		this.driver = driver;
 	}
 
-
-	
 	@FindBy(how = How.XPATH, using = "//a[contains(text(),'Offers')]")
 	public WebElement clickoffer;
-
 
 	public void clickOfferButton() throws Throwable {
 		clickoffer.sendKeys(Keys.ENTER);

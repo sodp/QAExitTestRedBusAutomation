@@ -9,15 +9,17 @@ import pages.careerPage;
 import util.Execution;
 
 public class careerTest extends BaseTest {
-	private String sheetName = "Home Page"; 
+	private String sheetName = "Home Page";
+
 	@Test
 	public void careers() throws Throwable {
 		extentTest = extent.startTest("Valid careers page scenario test");
-		String testcase = "Career Page";  
+		String testcase = "Career Page";
 		HashMap<String, String> data = new HashMap<String, String>();
 		data = reader.getRowTestData(sheetName, testcase);
+		//Check Execution Required 
 		String executionRequired = data.get("Execution Required").toLowerCase();
-		
+
 		careerPage career = new careerPage(driver);
 		Execution.toCheckExecutionRequired(executionRequired);
 		career.careeerButton();

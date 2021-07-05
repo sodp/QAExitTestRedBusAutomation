@@ -13,13 +13,13 @@ public class SearchBustest extends BaseTest {
 	public void searchBusValid() throws InterruptedException {
 
 		String testName = "Valid Search Bus";
-	
+
 		HashMap<String, String> testData = new HashMap<String, String>();
 		testData = reader.getRowTestData(sheetName, testName);
 		String fromLocation = testData.get("From");
 		String toLocation = testData.get("To");
 		String dateVal = testData.get("Date");
-		// if execution required field is no
+		//Check Execution Required 
 		String executionRequired = testData.get("Execution Required").toLowerCase();
 		Execution.toCheckExecutionRequired(executionRequired);
 		extentTest = extent.startTest("Valid search bus test");
@@ -33,5 +33,5 @@ public class SearchBustest extends BaseTest {
 		user.SearchButton();
 		logger.info("Valid Search Bus Test Case Passed");
 	}
-	
+
 }

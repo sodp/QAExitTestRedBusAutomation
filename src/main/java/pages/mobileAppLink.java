@@ -31,5 +31,4 @@ public class mobileAppLink {
 		Thread.sleep(2000);
 	}
 
-
 }

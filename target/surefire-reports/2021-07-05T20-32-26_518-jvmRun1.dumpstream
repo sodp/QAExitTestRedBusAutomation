@@ -1,0 +1,32 @@
+# Created at 2021-07-05T20:36:25.241
+Unexpected IOException: 5,1,tests.SearchBustest,searchBusValid(tests.SearchBustest),tests.SearchBustest,null,null
+
+
+# Created at 2021-07-05T20:36:25.251
+Unexpected IOException: 8,1,tests.SearchBustest,searchBusValid(tests.SearchBustest),null,pages/SearchBus,null,pages/SearchBus,SearchBustest.searchBusValid:26 NoClassDefFound pages/SearchBus,java.lang.NoClassDefFoundError: pages/SearchBus\000A\0009at tests.SearchBustest.searchBusValid(SearchBustest.java:26)\000ACaused by: java.lang.ClassNotFoundException: pages.SearchBus\000A\0009at tests.SearchBustest.searchBusValid(SearchBustest.java:26)\000A
+
+
+# Created at 2021-07-05T20:36:26.879
+Unexpected IOException with stream: \Reports\searchBusValidTestFailed.png
+
+# Created at 2021-07-05T20:36:29.560
+Unexpected IOException with stream: ****************CHROME*****************
+
+
+# Created at 2021-07-05T20:36:37.953
+Unexpected IOException with stream: Jul 05, 2021 8:36:37 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+
+
+# Created at 2021-07-05T20:36:42.426
+Unexpected IOException: 5,1,tests.rpoolTest,rpoolandriod(tests.rpoolTest),tests.rpoolTest,null,null
+
+
+# Created at 2021-07-05T20:36:52.800
+Unexpected IOException with stream:  INFO [main] (rpoolTest.java:31)- rpool Andriod Test Case Passed
+
+
+# Created at 2021-07-05T20:36:52.804
+Unexpected IOException: 6,1,tests.rpoolTest,rpoolandriod(tests.rpoolTest),null,null,null
+
+

@@ -685,3 +685,62 @@
 2021-07-05 15:04:38,272 - tests.BaseTest -INFO - TravelDate functionality Test Case Passed
 2021-07-05 15:05:13,839 - tests.BaseTest -INFO - ShowTicket functionality Test Case Passed
 2021-07-05 15:07:53,852 - tests.BaseTest -INFO - All Bus Operators Navigation Test
+2021-07-05 19:13:58,682 - tests.BaseTest -INFO - Cancel Ticket Navigation Test Case Passed
+2021-07-05 19:14:31,274 - tests.BaseTest -INFO - TravelDate functionality Test Case Passed
+2021-07-05 19:15:04,488 - tests.BaseTest -INFO - ShowTicket functionality Test Case Passed
+2021-07-05 19:16:49,524 - tests.BaseTest -INFO - All Bus Operators Navigation Test
+2021-07-05 19:17:26,489 - tests.BaseTest -INFO - CareersPage Test Case Passed
+2021-07-05 19:18:00,685 - tests.BaseTest -INFO - SearchBus Test Case Passed
+2021-07-05 19:18:37,325 - tests.BaseTest -INFO - Global website country  Malaysia Test Case Passed
+2021-07-05 19:19:23,359 - tests.BaseTest -INFO - Global website country Colombia Test Case Passed
+2021-07-05 19:19:43,443 - tests.BaseTest -INFO - Global website country  Indonesia Test Case Passed
+2021-07-05 19:20:18,587 - tests.BaseTest -INFO - Global website country Peru Test Case Passed
+2021-07-05 19:20:50,871 - tests.BaseTest -INFO - Global website country  Singapore Test Case Passed
+2021-07-05 19:21:29,278 - tests.BaseTest -INFO - HelpButton functionality Test Case Passed
+2021-07-05 19:23:06,980 - tests.BaseTest -INFO -  Valid Modify Search BusLocation functionality Test Case Passed
+2021-07-05 19:23:44,865 - tests.BaseTest -INFO - offers Test Case Passed
+2021-07-05 19:24:56,442 - tests.BaseTest -INFO - PartnerWebsitesPage functionality Test Case Passed
+2021-07-05 19:25:49,906 - tests.BaseTest -INFO - rpool Andriod Test Case Passed
+2021-07-05 19:26:27,070 - tests.BaseTest -INFO - rpool ios Test Case Passed
+2021-07-05 19:27:11,465 - tests.BaseTest -INFO - Info agentRegistration  Test Case Passed
+2021-07-05 19:27:37,075 - tests.BaseTest -INFO - Info Blog Section  Test Case Passed
+2021-07-05 19:28:23,426 - tests.BaseTest -INFO - Info FAQ  Test Case Passed
+2021-07-05 19:28:46,610 - tests.BaseTest -INFO - Info Insurance Section  Test Case Passed
+2021-07-05 19:29:31,446 - tests.BaseTest -INFO - Info privacyPolicy  Test Case Passed
+2021-07-05 19:30:10,348 - tests.BaseTest -INFO - TermAndCondition Test Case Passed
+2021-07-05 19:30:46,575 - tests.BaseTest -INFO - Info user Agreement Section   Test Case Passed
+2021-07-05 19:31:15,318 - tests.BaseTest -INFO - Invalid Signin Test Case Passed
+2021-07-05 19:31:50,774 - tests.BaseTest -INFO - Valid Signin Test Case Passed
+2021-07-05 20:01:26,084 - tests.BaseTest -INFO - Cancel Ticket Navigation Test Case Passed
+2021-07-05 20:01:36,701 - tests.BaseTest -INFO - TravelDate functionality Test Case Passed
+2021-07-05 20:01:44,286 - tests.BaseTest -INFO - ShowTicket functionality Test Case Passed
+2021-07-05 20:02:47,914 - tests.BaseTest -INFO - CareersPage Test Case Passed
+2021-07-05 20:03:04,835 - tests.BaseTest -INFO - SearchBus Test Case Passed
+2021-07-05 20:03:19,606 - tests.BaseTest -INFO - Global website country  Malaysia Test Case Passed
+2021-07-05 20:04:00,114 - tests.BaseTest -INFO - HelpButton functionality Test Case Passed
+2021-07-05 20:04:54,397 - tests.BaseTest -INFO -  Valid Modify Search BusLocation functionality Test Case Passed
+2021-07-05 20:05:49,198 - tests.BaseTest -INFO - rpool Andriod Test Case Passed
+2021-07-05 20:06:16,048 - tests.BaseTest -INFO - rpool ios Test Case Passed
+2021-07-05 20:07:11,979 - tests.BaseTest -INFO - offers Test Case Passed
+2021-07-05 20:07:28,249 - tests.BaseTest -INFO - TravelDate functionality Test Case Passed
+2021-07-05 20:08:16,914 - tests.BaseTest -INFO - Global website country  Malaysia Test Case Passed
+2021-07-05 20:08:41,528 - tests.BaseTest -INFO - Global website country Colombia Test Case Passed
+2021-07-05 20:09:22,843 - tests.BaseTest -INFO - Global website country  Indonesia Test Case Passed
+2021-07-05 20:10:00,381 - tests.BaseTest -INFO - Global website country Peru Test Case Passed
+2021-07-05 20:10:30,618 - tests.BaseTest -INFO - Global website country  Singapore Test Case Passed
+2021-07-05 20:10:52,675 - tests.BaseTest -INFO - ShowTicket functionality Test Case Passed
+2021-07-05 20:11:23,450 - tests.BaseTest -INFO -  Valid Modify Search BusLocation functionality Test Case Passed
+2021-07-05 20:11:44,657 - tests.BaseTest -INFO - Info agentRegistration  Test Case Passed
+2021-07-05 20:12:33,906 - tests.BaseTest -INFO - Invalid Signin Test Case Passed
+2021-07-05 20:12:58,414 - tests.BaseTest -INFO - Valid Signin Test Case Passed
+2021-07-05 20:13:15,934 - tests.BaseTest -INFO - HelpButton functionality Test Case Passed
+2021-07-05 20:13:40,345 - tests.BaseTest -INFO - Valid Search Bus Test Case Passed
+2021-07-05 20:32:44,853 - tests.BaseTest -INFO - Cancel Ticket Navigation Test Case Passed
+2021-07-05 20:33:03,421 - tests.BaseTest -INFO - CareersPage Test Case Passed
+2021-07-05 20:33:50,452 - tests.BaseTest -INFO - All Bus Operators Navigation Test
+2021-07-05 20:35:06,869 - tests.BaseTest -INFO - SearchBus Test Case Passed
+2021-07-05 20:35:28,701 - tests.BaseTest -INFO - PartnerWebsitesPage functionality Test Case Passed
+2021-07-05 20:35:50,923 - tests.BaseTest -INFO - PartnerWebsitesPage functionality Test Case Passed
+2021-07-05 20:36:15,801 - tests.BaseTest -INFO - HelpButton functionality Test Case Passed
+2021-07-05 20:36:52,798 - tests.BaseTest -INFO - rpool Andriod Test Case Passed
+2021-07-05 20:36:58,280 - tests.BaseTest -INFO - Cancel Ticket Navigation Test Case Passed

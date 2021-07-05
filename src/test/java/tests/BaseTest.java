@@ -24,6 +24,8 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
@@ -108,9 +110,13 @@ public class BaseTest {
 	}
 
 //	@BeforeMethod
-//    public static void initWebDriver() throws Exception {
-//        webDriver.intializeWebdriver();
+//	@Parameters({"Port"})
+//	
+//	
+//    public static void initWebDriver(String value) throws Exception {
+//        webDriver.initiateDriver(value);
 //    }
+//	
 	@BeforeMethod
 	public static void intializeWebdriver() throws Exception {
 		String browser = prop.getProperty("browser");
@@ -160,7 +166,7 @@ public class BaseTest {
 				driver = new ChromeDriver();
 			} else if (headless.equalsIgnoreCase("no") && docker_flag.equalsIgnoreCase("true")) {
 				System.out.println("****************CHROME*****************");
-				FirefoxOptions options = new FirefoxOptions();
+				ChromeOptions options = new ChromeOptions();
 				driver = (new RemoteWebDriver(new URL("http:localhost:4444/wd/hub"), options));
 			} else {
 				driver = new ChromeDriver();
