@@ -64,7 +64,7 @@ This project uses Page Object Model (POM) Framework  and  it use test driven app
 
 	 			 -Install docker in your system
 	
-				 *Pull the following docker images :
+				  Pull the following docker images :
 	
 									-docker pull selenium/hub
 	
@@ -82,12 +82,12 @@ This project uses Page Object Model (POM) Framework  and  it use test driven app
 			
 									-docker-compose up -d
           
-          						-docker ps -a
+          						                -docker ps -a
 
-         				 			-docker-compose down
+         				 			        -docker-compose down
 
 					  (To run the test cases on docker set, browser = chrome/firefox , headless = no and docker = true)
-					  *Special Case To Run Test Case Parallel
+					  Special Case To Run Test Case Parallel
 					   ======================================
 					            -To run the test cases parallelly in two browsers in docker
 					            -Use the contents of testngparallel.xml file in resources folder
@@ -109,20 +109,19 @@ This project uses Page Object Model (POM) Framework  and  it use test driven app
 			2. Open a terminal window/command prompt from that location.
 			3. mvn clean test
 
-#or
+# or
 Run  the "runner.bat" file present in the directory itself to run it directly.
 
 
-#or
+# or
 To Run  the framework in jenkins follow the jenkin.doc 
 
-##Special Note & Errors:
+## Special Note & Errors:
 		* Headless mode for docker is not running
 		* serial execution of test cases is running smoothly but parallel some test cases failing in docker
 		* execution required or not can be taken from excel
 
-          
-        
+         
   
 * for headless mode execution in chrome and firefox and docker (headless mode not available)
   
@@ -155,7 +154,7 @@ To Run  the framework in jenkins follow the jenkin.doc
            -Log4j
            -POI XML     
            
-##Tested Website Functionalities:
+## Tested Website Functionalities:
 
 	 1 Cancel Ticket Page Navigation
 	
@@ -218,9 +217,9 @@ To Run  the framework in jenkins follow the jenkin.doc
 	 31 Navigate to Agent Registration  scenario test
 
 
-##Folder structure    
+## Folder structure    
           
-##src/main/java
+## src/main/java
 
 	Pages:
 	
@@ -245,7 +244,7 @@ To Run  the framework in jenkins follow the jenkin.doc
 			calendar
 			datetimepicker
 			
-##src/main/java
+## src/main/java
 
 	Test:
 	  
@@ -275,18 +274,18 @@ To Run  the framework in jenkins follow the jenkin.doc
 			Execution
 			ScreenShots
 
-##Drivers
+## Drivers
 
 			chromedriver
 			edgedriver
 			geckodriver
 			
-##Reports
+## Reports
 
 			report.html
 			screenshots
 
-##Resources
+## Resources
 
 			conf.config
 			data.xlsx
