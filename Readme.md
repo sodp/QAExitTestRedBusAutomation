@@ -11,13 +11,13 @@ Abstract
 This project uses Page Object Model (POM) Framework  and  it use test driven approach. Automates basic UI functionality & navigation of redbus website & dependencies can be found in pom.xml(maven project). Screenshots  along with error description can be found in extent test report
 
 # Modules in Testing
-*Module 1 : Manage Booking (Pages Java Class and Test Class)
+  Module 1 : Manage Booking (Pages Java Class and Test Class)
 
 		-bookingCancelTest/cancelBookingPage
 		-bookingchangeTravelDateTest/bookingManagingPage
 		-bookingShowTicketTest/bookingManagingPage
 
-*Module 2 : Home Page
+  Module 2 : Home Page
 
 		-busOperatorTest/busOperatorPage
 		-careerTest/careerPage
@@ -28,7 +28,7 @@ This project uses Page Object Model (POM) Framework  and  it use test driven app
 		-signinTest/signinPage
 		-rpoolTest/rpoolPage
 
-*Module 3: Global Booking
+  Module 3: Global Booking
 			
 		-globalSiteBookingPage
 		-Singapore Booking Page
@@ -37,7 +37,7 @@ This project uses Page Object Model (POM) Framework  and  it use test driven app
 		-Peru Booking Page
 		-Colombia Booking Page
 
-*Module 4: Section Info
+  Module 4: Section Info
 			
 		-InfoSection sectionInfoPage
 		-Terms and Condition Page
@@ -48,19 +48,19 @@ This project uses Page Object Model (POM) Framework  and  it use test driven app
 		-User Agreement Page	
 		-Agent Registration Page	
 
-*Module 5 : Bus Hire
+  Module 5 : Bus Hire
 
 		-busHireLocationTest valid
 		-busHireOutstationPage valid 
 
-*Module 6: Search Bus
+  Module 6: Search Bus
 
        -Valid Search Bus		
        -Valid Modify Search Bus		
 
-*Docker module
+  Docker module
 
-*Steps to set up docker:
+  Steps to set up docker:
 
 	 			 -Install docker in your system
 	
@@ -95,7 +95,7 @@ This project uses Page Object Model (POM) Framework  and  it use test driven app
 					            -Use webDriver.java as web intializer from web util  
 					            -sample screenshot of running test cases parallelly in two browsers in main directory
 
-*Jenkins module ( word file present in the directory)
+ Jenkins module ( word file present in the directory)
 
 			*The project has been integrated with github and jenkins.
 			*https://github.com/sodp/QAExitTestRedBusAutomation.git (Git Hub Link)
@@ -103,7 +103,7 @@ This project uses Page Object Model (POM) Framework  and  it use test driven app
 
 
 
-*Use the following steps to execute this project.
+ Use the following steps to execute this project.
 
 			1. Extract the zip and then place it in your workspace.
 			2. Open a terminal window/command prompt from that location.
@@ -294,7 +294,3 @@ To Run  the framework in jenkins follow the jenkin.doc
 			runner.bat
 			pom.xml
 			docker-compose.yml
-
-
-
-
