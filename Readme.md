@@ -10,7 +10,7 @@ Abstract
 ========
 This project uses Page Object Model (POM) Framework  and  it use test driven approach. Automates basic UI functionality & navigation of redbus website & dependencies can be found in pom.xml(maven project). Screenshots  along with error description can be found in extent test report
 
-#Modules in Testing
+# Modules in Testing
 *Module 1 : Manage Booking (Pages Java Class and Test Class)
 
 		-bookingCancelTest/cancelBookingPage
